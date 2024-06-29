@@ -1,0 +1,40 @@
+.label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.input {
+    width: 100%;
+	background: transparent;
+
+    padding: 0.9em 1.2em;
+
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid var(--border);
+
+    font-size: 1rem;
+	text-indent: 1.5rem;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input_wrapper {
+	position: relative;
+}
+
+.country_icon {
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	transform: translate(0, -50%);
+}
+
+.error {
+    border-color: var(--error);
+}
+
+.error_label {
+	color: var(--error); 
+}

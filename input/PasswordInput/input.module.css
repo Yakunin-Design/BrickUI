@@ -1,0 +1,41 @@
+.label {
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 120%;
+}
+
+.input {
+    width: 100%;
+
+    padding: 0.9em 1.2em;
+
+	background: transparent;
+    border-radius: 0.4rem;
+    border: 2px solid var(--border);
+
+    font-size: 1rem;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.error {
+    border-color: var(--error);
+}
+
+.error_label {
+	color: var(--error); 
+}
+
+.icon_wrapper {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+}

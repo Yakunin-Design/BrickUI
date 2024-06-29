@@ -1,0 +1,7 @@
+.card {
+    background-color: transparent;
+    padding: 2em 1.5em;
+    border-radius: var(--border-radius);
+	border: var(--border-width) solid var(--border);
+    width: 100%;
+}
