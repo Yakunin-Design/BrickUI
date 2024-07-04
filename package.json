@@ -1,0 +1,41 @@
+{
+  "name": "brickui",
+  "version": "0.0.1",
+  "description": "Simple UI kit for react",
+  "license": "MIT",
+  "author": "Yakunin Design",
+  "main": "./build/index.js",
+  "module": "./build/index.mjs",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yakunin-Design/BrickUI.git"
+  },
+  "keywords": [
+    "ui",
+    "uikit",
+    "react",
+    "library",
+    "components",
+    "yakunin-design"
+  ],
+  "engines": {
+    "node": ">=18.x"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "tsup": "^8.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.2"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "packageManager": "yarn@4.2.2"
+}
