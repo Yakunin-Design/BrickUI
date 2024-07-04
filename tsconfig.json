@@ -4,15 +4,16 @@
     "noImplicitAny": true,
     "esModuleInterop": true,
     "strictNullChecks": true,
-    "target": "ES2022",
-    "moduleResolution": "Node10",
-    "module": "CommonJS",
+    "target": "es2022",
+    "moduleResolution": "node",
+    "module": "esnext",
     "declaration": true,
     "isolatedModules": true,
     "noEmit": true,
     "outDir": "dist",
+    "rootDir": "./src",
     "jsx": "react"
   },
-  "include": ["src"],
+  "include": ["src", "declaration.d.ts"],
   "exclude": ["node_modules"]
 }
