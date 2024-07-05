@@ -18,6 +18,7 @@
       }
     ],
     "paths": {
+      "brickui": ["../../src/"],
       "@/components/*": ["./src/*"]
     }
   },

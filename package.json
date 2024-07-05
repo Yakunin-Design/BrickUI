@@ -4,11 +4,22 @@
   "description": "Simple UI kit for react",
   "license": "MIT",
   "author": "Yakunin Design",
-  "main": "dist/brickui.cjs.js",
-  "module": "dist/brickui.es.js",
+  "main": "dist/brickui.umd.cjs",
+  "module": "dist/brickui.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
+    "prebuild": "rm -rf dist",
     "build": "vite build"
+  },
+  "files": [
+    "dist",
+    "dist/style.css"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/brickui.js",
+      "require": "./dist/brickui.umd.cjs"
+    }
   },
   "repository": {
     "type": "git",
@@ -38,5 +49,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "yarn@4.2.2",
+  "dependencies": {
+    "vite-tsconfig-paths": "^4.3.2"
+  }
 }

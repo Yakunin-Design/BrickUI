@@ -1,13 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es2022",
+    "target": "es2020",
     "module": "esnext",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "outDir": "./dist",
     "rootDir": "./src",
-    "moduleResolution": "node",
-    "declarationDir": "./dist/types",
+    "moduleResolution": "bundler",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "paths": {
+      "brickui": ["./src/index.ts"]
+    },
+    "resolveJsonModule": true,
     "declaration": true,
+    "declarationDir": "./dist/types",
     "noEmit": true,
     "strict": true,
     "esModuleInterop": true,
