@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@yakunin-design/brickui": "^0.0.1",
+    "@yakunin-design/brickui": "./..",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18"
@@ -19,5 +19,8 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "typescript": "^5"
+  },
+  "resolutions": {
+    "@yakunin-design/brickui": "portal:/home/egor/projects/BrickUI"
   }
 }

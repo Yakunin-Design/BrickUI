@@ -1,19 +1,19 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "noImplicitAny": true,
-    "esModuleInterop": true,
-    "strictNullChecks": true,
     "target": "es2022",
-    "moduleResolution": "node",
     "module": "esnext",
-    "declaration": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "outDir": "dist",
+    "jsx": "react",
+    "outDir": "./dist",
     "rootDir": "./src",
-    "jsx": "react"
+    "moduleResolution": "node",
+    "declarationDir": "./dist/types",
+    "declaration": true,
+    "noEmit": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true
   },
   "include": ["src", "declaration.d.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
