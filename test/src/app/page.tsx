@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 // import { Button } from "../../../";
-import { Button } from "../../../src";
+import { Button } from "brickui";
 
 export default function Home() {
 	return (
