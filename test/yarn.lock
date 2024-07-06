@@ -371,7 +371,7 @@ __metadata:
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
-    "@yakunin-design/brickui": ./..
+    "@yakunin-design/brickui": "npm:^0.0.4"
     next: "npm:14.2.4"
     react: "npm:^18"
     react-dom: "npm:^18"
