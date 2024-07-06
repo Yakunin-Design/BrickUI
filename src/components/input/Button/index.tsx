@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./button.module.css";
 
-type props = {
+type button_props = {
     children: React.ReactNode;
     onClick?: () => void;
     secondary?: boolean;
@@ -16,7 +16,7 @@ type props = {
 	href?: string;
 };
 
-export default function Button(props: props) {
+export default function Button(props: button_props) {
     let button_styles = styles.primary;
 
     if (props.secondary) {

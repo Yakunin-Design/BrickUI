@@ -2,12 +2,14 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tsconfigPaths from "vite-tsconfig-paths";
 import { libInjectCss } from 'vite-plugin-lib-inject-css';
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
   plugins: [
 	  react(), 
 	  tsconfigPaths(),
 	  libInjectCss(),
+	  dts({rollupTypes: true}),
   ],
   build: {
     lib: {

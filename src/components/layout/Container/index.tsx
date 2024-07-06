@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./container.module.css";
 
-type props = {
+type container_props = {
     children: React.ReactNode;
     wrapper?: boolean;
     className?: string;
     lk?: boolean;
 };
 
-export default function Container(props: props) {
+export default function Container(props: container_props) {
     let container_styles;
 
     if (props.wrapper) {
