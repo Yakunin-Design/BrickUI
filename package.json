@@ -1,6 +1,6 @@
 {
   "name": "@yakunin-design/brickui",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simple UI kit for react",
   "license": "MIT",
   "author": "Yakunin Design",
@@ -22,6 +22,7 @@
     },
     "./dist/style.css": "./dist/style.css"
   },
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/Yakunin-Design/BrickUI.git"
