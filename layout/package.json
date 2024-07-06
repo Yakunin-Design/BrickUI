@@ -1,6 +1,6 @@
 {
-  "name": "@brickui/layout",
-  "version": "0.0.1",
+  "name": "@brick-uikit/layout",
+  "version": "0.0.4",
   "description": "Layout module of Brick uikit",
   "license": "MIT",
   "author": "Yakunin Design",
