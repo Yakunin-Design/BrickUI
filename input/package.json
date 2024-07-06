@@ -1,6 +1,6 @@
 {
-  "name": "@brickui/input",
-  "version": "0.0.1",
+  "name": "@brick-uikit/input",
+  "version": "0.0.3",
   "description": "Input module of Brick uikit",
   "license": "MIT",
   "author": "Yakunin Design",
