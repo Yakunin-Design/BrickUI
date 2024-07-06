@@ -1,0 +1,56 @@
+{
+  "name": "@brickui/layout",
+  "version": "0.0.1",
+  "description": "Layout module of Brick uikit",
+  "license": "MIT",
+  "author": "Yakunin Design",
+  "type": "module",
+  "main": "dist/brickui.umd.cjs",
+  "module": "dist/brickui.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc && vite build"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/brickui.js",
+      "require": "./dist/brickui.umd.cjs"
+    }
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yakunin-Design/BrickUI.git"
+  },
+  "keywords": [
+    "ui",
+    "uikit",
+    "react",
+    "library",
+    "components",
+    "yakunin-design"
+  ],
+  "engines": {
+    "node": ">=18.x"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-lib-inject-css": "^2.1.1",
+    "vite-tsconfig-paths": "^4.3.2"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "packageManager": "yarn@4.2.2"
+}

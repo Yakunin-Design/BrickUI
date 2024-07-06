@@ -1,7 +1,7 @@
 {
-  "name": "brick-uikit",
-  "version": "0.1.0",
-  "description": "Simple UI kit for react",
+  "name": "@brickui/display",
+  "version": "0.0.1",
+  "description": "Display module for Brick uikit",
   "license": "MIT",
   "author": "Yakunin Design",
   "type": "module",
