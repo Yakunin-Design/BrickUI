@@ -1,0 +1,13 @@
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.start {
+    align-items: start;
+}
+
+.end {
+    align-items: end;
+}
