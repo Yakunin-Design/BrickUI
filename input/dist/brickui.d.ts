@@ -1,3 +1,5 @@
+import { ChangeEvent } from 'react';
+import { CSSProperties } from 'react';
 import { default as default_2 } from 'react';
 import { JSX as JSX_2 } from 'react/jsx-runtime';
 
@@ -17,5 +19,72 @@ declare type button_props = {
     disabled?: boolean;
     href?: string;
 };
+
+export declare function Checkbox(props: props_3): JSX_2.Element;
+
+export declare function Input(props: props): JSX_2.Element;
+
+export declare function PasswordInput(props: props_2): JSX_2.Element;
+
+declare type props = {
+    name: string;
+    onChange: (event: any) => void;
+    type?: "tel" | "email";
+    placeholder?: string;
+    label?: string;
+    value?: string | number;
+    className?: string;
+    error?: string;
+    maxLength?: number;
+    style?: CSSProperties;
+    list?: string;
+    disabled?: boolean;
+};
+
+declare type props_2 = {
+    name: string;
+    onChange: (event: any) => void;
+    label?: string;
+    value?: string | number;
+    className?: string;
+    error?: string;
+    maxLength?: number;
+    style?: CSSProperties;
+    placeholder?: string;
+};
+
+declare type props_3 = {
+    onChange?: () => void;
+    checked?: boolean;
+    children?: React.ReactNode;
+    error?: string;
+};
+
+declare type props_4 = {
+    name: string;
+    onChange: (event: any) => void;
+    placeholder?: string;
+    label?: string;
+    error?: string;
+    className?: string;
+    maxLength?: number;
+    options: Array<string>;
+    value?: string | number;
+    values?: Array<string | number>;
+};
+
+declare type props_5 = {
+    name: string;
+    onChange: (event: ChangeEvent<HTMLTextAreaElement>) => void;
+    placeholder?: string;
+    label?: string;
+    value?: string;
+    className?: string;
+    style?: CSSProperties;
+};
+
+export declare function Select(props: props_4): JSX_2.Element;
+
+export declare function TextArea(props: props_5): JSX_2.Element;
 
 export { }

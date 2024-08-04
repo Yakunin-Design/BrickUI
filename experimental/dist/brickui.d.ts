@@ -1,21 +1,18 @@
 import { default as default_2 } from 'react';
 import { JSX as JSX_2 } from 'react/jsx-runtime';
 
-export declare function Button(props: button_props): JSX_2.Element;
+export declare function Radio(props: radio_props): JSX_2.Element;
 
-declare type button_props = {
+declare type radio_group_props = {
+    children: default_2.ReactNode;
+    name: string;
+};
+
+declare type radio_props = {
     children: default_2.ReactNode;
     onClick?: () => void;
-    secondary?: boolean;
-    outline?: boolean;
-    expand?: boolean;
-    link?: boolean;
-    ghost?: boolean;
-    className?: string;
-    destructive?: boolean;
-    submit?: boolean;
-    disabled?: boolean;
-    href?: string;
 };
+
+export declare function RadioGroup(props: radio_group_props): JSX_2.Element;
 
 export { }

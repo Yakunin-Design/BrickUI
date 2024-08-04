@@ -1,5 +1,6 @@
-import Button from "./components/Button";
+import { Radio, RadioGroup } from "./components/Radio";
 
 export { 
-	Button
+	Radio,
+	RadioGroup
 };

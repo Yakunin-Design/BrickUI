@@ -1,0 +1,29 @@
+.label {
+    font-weight: bold;
+    font-size: 1rem;
+    /* line-height: 120%; */
+    /* letter-spacing: 0.05rem; */
+}
+
+.input {
+    width: 100%;
+    background-color: transparent;
+    padding: 1rem;
+
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid var(--border);
+
+    font-size: 1rem;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.error {
+    border-color: var(--error);
+}
+
+.error_label {
+	color: var(--error); 
+}
