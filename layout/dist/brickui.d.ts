@@ -16,6 +16,12 @@ declare type divider_props = {
     text?: string;
 };
 
+export declare function Hidden(props: hidden_props): JSX_2.Element;
+
+declare type hidden_props = {
+    children: default_2.ReactNode;
+};
+
 export declare function Padding(props: padding_props): JSX_2.Element;
 
 declare type padding_props = {
