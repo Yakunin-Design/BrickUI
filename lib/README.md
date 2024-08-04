@@ -1,7 +1,5 @@
 # BrickUI
-Simple UI kit for react
+Tiny set of functions and hooks for brick-uikit
 
-# Important
-Currently this ui kit library is under development, 
-Only 2 components: Button, Container 
-
+# Functions:
+useBoolean, useErrors

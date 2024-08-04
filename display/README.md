@@ -1,7 +1,6 @@
 # BrickUI
-Simple UI kit for react
+Welcome to the display components for brick-uikit
 
 # Important
 Currently this ui kit library is under development, 
-Only 2 components: Button, Container 
-
+use at your own risk

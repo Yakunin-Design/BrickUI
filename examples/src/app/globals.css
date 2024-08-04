@@ -17,15 +17,15 @@
 	--error-dark: #8D0000;
 	--contrast-dark: black;
 
-	--border-radius: .2rem;
-	--border-width: 3px;
+	--border-radius: .6rem;
+	--border-width: 2px;
 
 	/* Theme changed */
     --background: white;
 	--border: #D9D9D9;
 	--title: #0F0F0F;
 	--text: #404040;
-	--accent: red;
+	--accent: blue;
 	--error: #E10000;
 	--contrast: white;
 

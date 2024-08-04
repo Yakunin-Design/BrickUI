@@ -1,4 +1,4 @@
-import { jsx as n, jsxs as o, Fragment as m } from "react/jsx-runtime";
+import { jsx as n, jsxs as m, Fragment as o } from "react/jsx-runtime";
 import './index.css';const _ = "_container_1v4dn_1", v = "_wrapper_1v4dn_8", f = "_lk_1v4dn_17", l = {
   container: _,
   wrapper: v,
@@ -57,15 +57,15 @@ function $(e) {
     }
   );
 }
-const N = "_divider_apo7i_1", w = "_line_apo7i_8", y = "_text_apo7i_14", a = {
+const N = "_divider_28riq_1", w = "_line_28riq_8", y = "_text_28riq_14", a = {
   divider: N,
   line: w,
   text: y
 };
-function b(e) {
-  return /* @__PURE__ */ o("div", { className: a.divider, children: [
+function q(e) {
+  return /* @__PURE__ */ m("div", { className: a.divider, children: [
     /* @__PURE__ */ n("div", { className: a.line }),
-    e.text && /* @__PURE__ */ o(m, { children: [
+    e.text && /* @__PURE__ */ m(o, { children: [
       /* @__PURE__ */ n("p", { className: a.text, children: e.text }),
       /* @__PURE__ */ n("div", { className: a.line })
     ] })
@@ -73,7 +73,7 @@ function b(e) {
 }
 export {
   k as Container,
-  b as Divider,
+  q as Divider,
   $ as Padding,
   C as Row,
   j as Spacer

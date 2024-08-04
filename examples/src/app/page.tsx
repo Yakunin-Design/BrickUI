@@ -1,6 +1,6 @@
 "use client";
 import styles from "./page.module.css";
-import { Container, Spacer } from "brick-uikit/layout";
+import { Container, Spacer, Divider } from "brick-uikit/layout";
 import { RadioGroup, Radio } from "brick-uikit/experimental";
 import { 
 	Button,
@@ -24,6 +24,9 @@ export default function Home() {
 			<Spacer top={2}/>
 			<h1>Brick UI examples</h1>
 			<Button>Hello</Button>
+			<Button secondary>Hello</Button>
+			<Button outline>Hello</Button>
+			<Button ghost>Hello</Button>
 			<Spacer top={2}/>
 			<RadioGroup name="test">
 				<Radio>
@@ -35,6 +38,7 @@ export default function Home() {
 
 			<Input name="test" onChange={handle_change}/>
 			<PasswordInput name="password" onChange={handle_change}/>
+			<Divider text={"or register with"} />
 			<Checkbox />
 			<Select name="select" onChange={handle_change} options={options}/>
 			<TextArea name="textArea" onChange={handle_change}/>
