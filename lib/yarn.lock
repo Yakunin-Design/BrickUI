@@ -362,12 +362,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@brick-uikit/input@workspace:.":
+"@brick-uikit/lib@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@brick-uikit/input@workspace:."
+  resolution: "@brick-uikit/lib@workspace:."
   dependencies:
-    "@brick-uikit/layout": "npm:^0.1.0"
-    "@brick-uikit/lib": "npm:^0.0.1"
     "@types/react": "npm:^18.3.3"
     "@types/react-dom": "npm:^18.3.0"
     "@vitejs/plugin-react": "npm:^4.3.1"
@@ -379,31 +377,10 @@ __metadata:
     vite-plugin-lib-inject-css: "npm:^2.1.1"
     vite-tsconfig-paths: "npm:^4.3.2"
   peerDependencies:
-    "@brick-uikit/layout": ^0.1.0
     react: ^18.3.1
     react-dom: ^18.3.1
   languageName: unknown
   linkType: soft
-
-"@brick-uikit/layout@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@brick-uikit/layout@npm:0.1.0"
-  peerDependencies:
-    react: ^18.3.1
-    react-dom: ^18.3.1
-  checksum: 10c0/3d7eb2a979efe61402d05ffdb70bdcd47904d2053e8e4222012f83685aaf9cfbff1ad35ce6d557bb61e93687e0707e5f497612defe60b5bd1b83b567b84ff09d
-  languageName: node
-  linkType: hard
-
-"@brick-uikit/lib@npm:^0.0.1":
-  version: 0.0.1
-  resolution: "@brick-uikit/lib@npm:0.0.1"
-  peerDependencies:
-    react: ^18.3.1
-    react-dom: ^18.3.1
-  checksum: 10c0/c8853e6ca713723018a04bf2dfaa097b7992a639cf626d107ca17f0daa3d3537b62e6493faca29a47a7c389da60863ad52091f6da4e1b7edd3355ab20e8820f7
-  languageName: node
-  linkType: hard
 
 "@esbuild/aix-ppc64@npm:0.21.5":
   version: 0.21.5

@@ -1,4 +1,5 @@
 import { Row } from "@brick-uikit/layout";
+import { useBoolean } from "@brick-uikit/lib";
 import { useState } from "react";
 import styles from "./index.module.css";
 
@@ -10,14 +11,14 @@ type props = {
 };
 
 export default function Checkbox(props: props) {
-	const [isChecked, setIsChecked] = useState(props.checked || false);
+	const [is_checked, toggle_checked] = useBoolean(props.checked || false);
 
 	let input_style = styles.checkbox;
 	if (props.error)
 		input_style = input_style + " " + styles.error;
 
 	function handleChange() {
-		if(!props.checked) setIsChecked(prev => !prev);
+		toggle_checked();
 
 		if(props.onChange) props.onChange();
 	};
@@ -31,11 +32,11 @@ export default function Checkbox(props: props) {
 							name="checkbox"
 							id="checkbox"
 							onChange={handleChange}
-							checked={isChecked}
+							checked={is_checked}
 							className={styles.input}
 						/>
 						<div className={input_style}>
-							{isChecked && (
+							{is_checked && (
 									<svg width="100%" height="100%" viewBox="0 0 14 14" version="1.1">
 										<g transform="matrix(1.42896,0,0,1.42896,-3.00275,-2.78827)">
 											<g id="Symbols">

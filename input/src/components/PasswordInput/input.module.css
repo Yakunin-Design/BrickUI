@@ -1,19 +1,22 @@
 .label {
     font-weight: 700;
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 120%;
     letter-spacing: 0.05rem;
 }
 
 .input {
+	font-size: 1rem;
+    background-color: transparent;
     width: 100%;
-
     padding: 0.9em 1.2em;
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid var(--border);
+}
 
-    border-radius: 0.4rem;
-    border: 2px solid black;
-
-    font-size: 1rem;
+.input:focus {
+    outline: none;
+    border: var(--border-width) solid var(--accent);
 }
 
 .error {
@@ -34,4 +37,16 @@
     right: 6%;
     transform: translate(0%, -50%);
     cursor: pointer;
+}
+
+.eye svg path {
+	stroke: var(--border);
+}
+
+.eye svg circle {
+	stroke: var(--border);
+}
+
+.eye svg rect {
+	fill: var(--border);	
 }

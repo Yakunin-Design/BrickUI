@@ -1,8 +1,8 @@
 "use client";
 import styles from "./input.module.css";
 import { Spacer } from "@brick-uikit/layout";
-import eye_closed from "./eye_closed.svg";
-import eye_opened from "./eye.svg";
+import { useBoolean } from "@brick-uikit/lib";
+import EyeIcon from "./EyeIcon";  
 import { CSSProperties, useState } from "react";
 
 type props = {
@@ -17,9 +17,8 @@ type props = {
     placeholder?: string;
 };
 
-export default function Input(props: props) {
-    const [show, setShow] = useState(false);
-    const toggle_show = () => setShow(!show);
+export default function PasswordInput(props: props) {
+    const [show_password, toggle_password] = useBoolean();
 
 	let input_style = styles.input;
 	if (props.error) input_style = input_style + " " + styles.error;
@@ -38,19 +37,19 @@ export default function Input(props: props) {
                     className={input_style}
                     id={props.name}
                     name={props.name}
-                    type={show ? "text" : "password"}
+                    type={show_password ? "text" : "password"}
                     placeholder={props.placeholder}
                     onChange={props.onChange}
                     value={props.value}
                     maxLength={props.maxLength}
                     style={props.style ? props.style : {}}
                 />
-                <img
-                    src={show ? eye_opened : eye_closed}
-                    alt="eye"
+                <div
                     className={styles.eye}
-                    onClick={toggle_show}
-                />
+                    onClick={() => toggle_password()}
+                >
+					<EyeIcon is_closed={show_password} />
+				</div>
             </div>
 			{props.error && <p className={styles.error_label}>{props.error}</p>}
         </>
