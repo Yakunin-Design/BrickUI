@@ -15,6 +15,9 @@ type props = {
     style?: CSSProperties;
     list?: string;
     disabled?: boolean;
+	pattern?: string;
+	min?: number;
+	max?: number;
 };
 
 export default function Input(props: props) {
@@ -44,6 +47,9 @@ export default function Input(props: props) {
                 style={props.style ? props.style : {}}
                 list={props.list}
                 disabled={props.disabled}
+				min={props.min}
+				max={props.max}
+				pattern={props.pattern}
             />
 			{props.error && <p className={styles.error_label}>{props.error}</p>}
 		</>
