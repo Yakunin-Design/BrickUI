@@ -44,14 +44,12 @@ for(let x = 0; x < 21; x++) {
 			key={l+s}
 			style={{background: `hsl(100, ${s}%, ${l}%)`}}
 		></div>
-
-
 	);
 }
 
 s = 99;
 l = 1;
-step = 20;
+step = 16;
 
 for(let x = 0; x < 7; x++) {
 	s -= step;	
@@ -62,14 +60,12 @@ for(let x = 0; x < 7; x++) {
 			key={s+l}
 			style={{background: `hsl(100, ${s}%, ${l}%)`}}
 		></div>
-
-
 	);
 }
 
-s = 99;
+s = 100;
 l = 1;
-step = 1.5;
+step = .5;
 
 for(let x = 0; x < 7; x++) {
 	s -= step;	
@@ -80,11 +76,8 @@ for(let x = 0; x < 7; x++) {
 			key={s+l}
 			style={{background: `hsl(100, ${s}%, ${l}%)`}}
 		></div>
-
-
 	);
 }
-
 
 export default function Home() {
 	const options = ["apple", "orange"];

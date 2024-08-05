@@ -1,10 +1,9 @@
 # BrickUI input
-This is the input modules for brick-uikit!
+This is the input module for brick-uikit!
 
 # Important
 Currently this ui kit library is under development, 
-bugs are expected, lots cat change, be ware :)
+bugs are expected, lots can change, beware :)
 
-# Components
-These components are currently supported:
+# Components:
 Input, PasswordInput, TextArea, Button, Select, Checkbox
