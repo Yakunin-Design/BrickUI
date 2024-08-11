@@ -18,6 +18,7 @@ declare type button_props = {
     submit?: boolean;
     disabled?: boolean;
     href?: string;
+    style?: CSSProperties;
 };
 
 export declare function Checkbox(props: props_3): JSX_2.Element;
@@ -39,6 +40,9 @@ declare type props = {
     style?: CSSProperties;
     list?: string;
     disabled?: boolean;
+    pattern?: string;
+    min?: number;
+    max?: number;
 };
 
 declare type props_2 = {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties }  from "react";
 import styles from "./button.module.css";
 
 type button_props = {
@@ -14,42 +14,35 @@ type button_props = {
     submit?: boolean;
     disabled?: boolean;
 	href?: string;
+    style?: CSSProperties;
 };
 
 export default function Button(props: button_props) {
     let button_styles = styles.primary;
 
-    if (props.secondary) {
+    if (props.secondary)
         button_styles += " " + styles.secondary;
-    }
 
-    if (props.link) {
+    if (props.link)
         button_styles += " " + styles.link;
-    }
 
-    if (props.ghost) {
+    if (props.ghost)
         button_styles += " " + styles.ghost;
-    }
 
-    if (props.destructive) {
+    if (props.destructive)
         button_styles += " " + styles.destructive;
-    }
 
-    if (props.outline) {
+    if (props.outline)
         button_styles += " " + styles.outline;
-    }
 
-    if (props.expand) {
+    if (props.expand)
         button_styles += " " + styles.expand;
-    }
 
-    if (props.disabled) {
+    if (props.disabled)
         button_styles += " " + styles.disabled;
-    }
 
-    if (props.className) {
+    if (props.className)
         button_styles += " " + props.className;
-    }
 
     return (
 		<>
@@ -58,6 +51,7 @@ export default function Button(props: button_props) {
 					<button
 						className={button_styles}
 						onClick={props.onClick}
+						style={props.style}
 						type={props.submit ? "submit" : "button"}
 					>
 						{props.children}
@@ -68,6 +62,7 @@ export default function Button(props: button_props) {
 					className={button_styles}
 					onClick={props.onClick}
 					type={props.submit ? "submit" : "button"}
+					style={props.style}
 				>
 					{props.children}
 				</button>
