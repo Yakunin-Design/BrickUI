@@ -1,19 +1,19 @@
-import { jsx as n, jsxs as o, Fragment as m } from "react/jsx-runtime";
-import './index.css';const _ = "_container_1v4dn_1", v = "_wrapper_1v4dn_8", f = "_lk_1v4dn_17", a = {
+import { jsx as n, jsxs as m, Fragment as o } from "react/jsx-runtime";
+import './index.css';const _ = "_container_1v4dn_1", v = "_wrapper_1v4dn_8", f = "_lk_1v4dn_17", l = {
   container: _,
   wrapper: v,
   lk: f
 };
-function j(e) {
+function k(e) {
   let t;
-  return e.wrapper ? t = a.wrapper : t = a.container, e.className && (t += " " + e.className), e.lk ? /* @__PURE__ */ n("div", { className: a.lk, children: /* @__PURE__ */ n("div", { className: t, children: e.children }) }) : /* @__PURE__ */ n("div", { className: t, children: e.children });
+  return e.wrapper ? t = l.wrapper : t = l.container, e.className && (t += " " + e.className), e.lk ? /* @__PURE__ */ n("div", { className: l.lk, children: /* @__PURE__ */ n("div", { className: t, children: e.children }) }) : /* @__PURE__ */ n("div", { className: t, children: e.children });
 }
-const h = "_row_19uuv_1", u = "_start_19uuv_7", g = "_end_19uuv_11", c = {
-  row: h,
-  start: u,
+const u = "_row_19uuv_1", h = "_start_19uuv_7", g = "_end_19uuv_11", c = {
+  row: u,
+  start: h,
   end: g
 };
-function $(e) {
+function C(e) {
   let t = "";
   e.className && (t += " " + e.className);
   const i = {
@@ -31,7 +31,7 @@ function $(e) {
     }
   );
 }
-function b(e) {
+function j(e) {
   const { top: t, bottom: i, left: r, children: d } = e, s = {
     marginTop: t ? `${t}rem` : "0rem",
     marginBottom: i ? `${i}rem` : "0rem",
@@ -39,13 +39,13 @@ function b(e) {
   };
   return t || i ? /* @__PURE__ */ n("div", { style: s, children: d }) : /* @__PURE__ */ n("span", { style: s, children: d });
 }
-function q(e) {
+function $(e) {
   let t = {};
-  return (e.vertical || e.horisontal) && (t = {
+  return (e.vertical || e.horizontal) && (t = {
     paddingTop: e.vertical + "rem",
     paddingBottom: e.vertical + "rem",
-    paddingRight: e.horisontal + "em",
-    paddingLeft: e.horisontal + "em"
+    paddingRight: e.horizontal + "em",
+    paddingLeft: e.horizontal + "em"
   }), /* @__PURE__ */ n(
     "div",
     {
@@ -57,31 +57,24 @@ function q(e) {
     }
   );
 }
-const N = "_divider_28riq_1", y = "_line_28riq_8", w = "_text_28riq_14", l = {
+const N = "_divider_28riq_1", w = "_line_28riq_8", y = "_text_28riq_14", a = {
   divider: N,
-  line: y,
-  text: w
+  line: w,
+  text: y
 };
-function B(e) {
-  return /* @__PURE__ */ o("div", { className: l.divider, children: [
-    /* @__PURE__ */ n("div", { className: l.line }),
-    e.text && /* @__PURE__ */ o(m, { children: [
-      /* @__PURE__ */ n("p", { className: l.text, children: e.text }),
-      /* @__PURE__ */ n("div", { className: l.line })
+function q(e) {
+  return /* @__PURE__ */ m("div", { className: a.divider, children: [
+    /* @__PURE__ */ n("div", { className: a.line }),
+    e.text && /* @__PURE__ */ m(o, { children: [
+      /* @__PURE__ */ n("p", { className: a.text, children: e.text }),
+      /* @__PURE__ */ n("div", { className: a.line })
     ] })
   ] });
 }
-const x = "_hidden_1wrby_1", k = {
-  hidden: x
-};
-function L(e) {
-  return /* @__PURE__ */ n("div", { className: k.hidden, children: e.children });
-}
 export {
-  j as Container,
-  B as Divider,
-  L as Hidden,
-  q as Padding,
-  $ as Row,
-  b as Spacer
+  k as Container,
+  q as Divider,
+  $ as Padding,
+  C as Row,
+  j as Spacer
 };
