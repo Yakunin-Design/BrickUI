@@ -29,7 +29,7 @@ export default function Select(props: props) {
 		);
 	});
 
-	let input_style = styles.input;
+	let input_style = styles.select;
 	if (props.error) input_style = input_style + " " + styles.error;
 	if (props.className) input_style = input_style + " " + props.className;
 

@@ -1,6 +1,6 @@
 type padding_props = {
     children: React.ReactNode;
-    horisontal?: number;
+    horizontal?: number;
     vertical?: number;
 
     onClick?: () => void;
@@ -10,13 +10,13 @@ type padding_props = {
 
 export default function Padding(props: padding_props) {
     let style = {};
-    if (props.vertical || props.horisontal) {
+    if (props.vertical || props.horizontal) {
         style = {
             paddingTop: props.vertical + "rem",
             paddingBottom: props.vertical + "rem",
 
-            paddingRight: props.horisontal + "em",
-            paddingLeft: props.horisontal + "em",
+            paddingRight: props.horizontal + "em",
+            paddingLeft: props.horizontal + "em",
         };
     }
 
