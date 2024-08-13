@@ -1,15 +1,15 @@
 import { jsx as n, jsxs as m, Fragment as o } from "react/jsx-runtime";
-import './index.css';const _ = "_container_1v4dn_1", v = "_wrapper_1v4dn_8", f = "_lk_1v4dn_17", l = {
+import './index.css';const _ = "_container_ck8td_1", f = "_wrapper_ck8td_8", u = "_lk_ck8td_17", l = {
   container: _,
-  wrapper: v,
-  lk: f
+  wrapper: f,
+  lk: u
 };
-function k(e) {
+function x(e) {
   let t;
   return e.wrapper ? t = l.wrapper : t = l.container, e.className && (t += " " + e.className), e.lk ? /* @__PURE__ */ n("div", { className: l.lk, children: /* @__PURE__ */ n("div", { className: t, children: e.children }) }) : /* @__PURE__ */ n("div", { className: t, children: e.children });
 }
-const u = "_row_19uuv_1", h = "_start_19uuv_7", g = "_end_19uuv_11", c = {
-  row: u,
+const v = "_row_19uuv_1", h = "_start_19uuv_7", g = "_end_19uuv_11", c = {
+  row: v,
   start: h,
   end: g
 };
@@ -57,10 +57,10 @@ function $(e) {
     }
   );
 }
-const N = "_divider_28riq_1", w = "_line_28riq_8", y = "_text_28riq_14", a = {
+const N = "_divider_28riq_1", k = "_line_28riq_8", w = "_text_28riq_14", a = {
   divider: N,
-  line: w,
-  text: y
+  line: k,
+  text: w
 };
 function q(e) {
   return /* @__PURE__ */ m("div", { className: a.divider, children: [
@@ -72,7 +72,7 @@ function q(e) {
   ] });
 }
 export {
-  k as Container,
+  x as Container,
   q as Divider,
   $ as Padding,
   C as Row,

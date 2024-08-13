@@ -1,0 +1,17 @@
+.base {
+    background-color: var(--contrast);
+    border-radius: var(--border-radius);
+	padding: 1em;
+}
+
+.accent {
+    background-color: var(--accent);
+}
+
+.secondary {
+    background-color: var(--border);
+}
+
+.outline {
+	border: var(--border-width) solid var(--border);
+}

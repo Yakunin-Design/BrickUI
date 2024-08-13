@@ -1,7 +1,7 @@
-import Button from "./components/input/Button";
-import Container from "./components/layout/Container";
+import Card from "./components/Card";
+import Badge from "./components/Badge";
 
 export { 
-	Button, 
-	Container 
+	Card, 
+	Badge
 };

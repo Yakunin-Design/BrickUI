@@ -28,14 +28,9 @@
     .container {
         padding: 0 2rem;
     }
-
-    .lk {
-        margin-left: 86px;
-        width: calc(100% - 86px);
-    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     .lk {
         width: calc(100% - 300px);
         margin-left: 300px;

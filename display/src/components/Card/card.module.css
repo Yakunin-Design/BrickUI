@@ -1,0 +1,14 @@
+.base {
+    background-color: var(--contrast);
+    border-radius: var(--border-radius);
+    width: 100%;
+}
+
+.default_spacing {
+    margin-top: 2em;
+    padding: 2em;
+}
+
+.outline {
+	border: var(--border-width) solid var(--border);
+}
