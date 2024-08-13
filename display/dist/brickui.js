@@ -1,32 +1,32 @@
 import { jsx as t } from "react/jsx-runtime";
-import './index.css';const s = "_base_bc655_1", l = "_default_spacing_bc655_7", i = "_outline_bc655_12", n = {
+import './index.css';const s = "_base_1c565_1", l = "_default_spacing_1c565_7", i = "_outline_1c565_12", a = {
   base: s,
   default_spacing: l,
   outline: i
 };
 function y(e) {
-  let c = n.base;
-  return e.no_spacing || (c += " " + n.default_spacing), e.outline && (c += " " + n.outline), e.className && (c += " " + e.className), /* @__PURE__ */ t(
+  let n = a.base;
+  return e.no_spacing || (n += " " + a.default_spacing), e.outline && (n += " " + a.outline), e.className && (n += " " + e.className), /* @__PURE__ */ t(
     "div",
     {
-      className: c,
+      className: n,
       style: e.style,
       children: e.children
     }
   );
 }
-const _ = "_base_hfe5e_1", d = "_accent_hfe5e_7", o = "_secondary_hfe5e_11", f = "_outline_hfe5e_15", a = {
+const _ = "_base_174nd_1", d = "_accent_174nd_8", o = "_secondary_174nd_13", u = "_outline_174nd_18", c = {
   base: _,
   accent: d,
   secondary: o,
-  outline: f
+  outline: u
 };
 function b(e) {
-  let c = a.base;
-  return e.accent && (c += " " + a.accent), e.outline && (c += " " + a.outline), e.secondary && (c += " " + a.secondary), e.className && (c += " " + e.className), /* @__PURE__ */ t(
+  let n = c.base;
+  return e.accent && (n += " " + c.accent), e.outline && (n += " " + c.outline), e.secondary && (n += " " + c.secondary), e.className && (n += " " + e.className), /* @__PURE__ */ t(
     "div",
     {
-      className: c,
+      className: n,
       style: e.style,
       children: e.children
     }

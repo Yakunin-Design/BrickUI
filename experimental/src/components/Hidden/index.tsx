@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "src/components/Hidden/hidden.module.css";
+import styles from "./hidden.module.css";
 
 type hidden_props = {
     children: React.ReactNode

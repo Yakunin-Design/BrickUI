@@ -11,4 +11,5 @@
 
 .outline {
 	border: var(--border-width) solid var(--border);
+	background-color: transparent;
 }
