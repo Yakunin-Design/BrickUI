@@ -5,7 +5,6 @@ type card_props = {
     children: React.ReactNode;
 	no_spacing?: boolean;
     outline?: boolean;
-    expand?: boolean;
     className?: string;
     style?: CSSProperties;
 };
