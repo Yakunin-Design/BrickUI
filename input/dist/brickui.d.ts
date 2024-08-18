@@ -67,13 +67,11 @@ declare type props_3 = {
 declare type props_4 = {
     name: string;
     onChange: (event: any) => void;
-    placeholder?: string;
+    options: Array<string>;
+    value: string | number;
     label?: string;
     error?: string;
     className?: string;
-    maxLength?: number;
-    options: Array<string>;
-    value?: string | number;
     values?: Array<string | number>;
 };
 

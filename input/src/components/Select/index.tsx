@@ -1,21 +1,20 @@
 import { Spacer } from "@brick-uikit/layout";
+import type { ReactNode } from "react";
 import styles from "./input.module.css";
 
 type props = {
     name: string;
     onChange: (event: any) => void;
-    placeholder?: string;
+    options: Array<string>;
+	value: string | number;
     label?: string;
 	error?: string;
     className?: string;
-    maxLength?: number;
-    options: Array<string>;
-	value?: string | number;
     values?: Array<string | number>;
 };
 
 export default function Select(props: props) {
-	const options: Array<any> = [];
+	const options: Array<ReactNode> = [];
 
 	props.options.forEach((opt, index) => {
 		let value: string | number = opt;
@@ -23,7 +22,7 @@ export default function Select(props: props) {
 			value = props.values[index];
 
 		options.push(
-			<option value={value?.toString()} key={options.length}>
+			<option value={value} key={options.length}>
 				{opt}
 			</option>
 		);
@@ -40,7 +39,7 @@ export default function Select(props: props) {
                     <label className={styles.label} htmlFor={props.name}>
                         <h3>{props.label}</h3>
                     </label>
-                    <Spacer top={1} />
+                    <Spacer top={.5} />
                 </>
             )}
 
@@ -51,7 +50,7 @@ export default function Select(props: props) {
 				onChange={props.onChange}
 				value={props.value}
             >
-                {options.map(option => option)}
+                {options}
             </select>
         </>
     );

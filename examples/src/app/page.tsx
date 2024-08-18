@@ -1,5 +1,6 @@
 "use client";
 import styles from "./page.module.css";
+import { useState } from "react";
 import { Container, Spacer, Padding, Divider, Hidden, Row } from "brick-uikit/layout";
 import { RadioGroup, Radio } from "brick-uikit/experimental";
 import { Badge, Card } from "brick-uikit/display";
@@ -13,10 +14,19 @@ import {
 } from "brick-uikit/input";
 
 export default function Home() {
-	const options = ["apple", "orange"];
+	const [data, set_data] = useState({fruit: 2});
+	const options = ["apple", "orange", "blueberry", "watermelon"];
+	const values = [1, 2, 3, 4];
 
 	function handle_change() {
-		console.log("change!");
+		const { name, value } = event.target;
+		
+		set_data(prev => {
+			return {
+				...prev,
+				[name]: Number(value)
+			}
+		})
 	}
 
 	return (
@@ -48,7 +58,15 @@ export default function Home() {
 			<PasswordInput name="password" onChange={handle_change}/>
 			<Divider text={"or register with"} />
 			<Checkbox />
-			<Select name="select" onChange={handle_change} options={options}/>
+
+			<Select 
+				name="fruit" 
+				onChange={handle_change} 
+				options={options} 
+				values={values}
+				value={data.fruit}
+			/>
+
 			<TextArea name="textArea" onChange={handle_change}/>
 
 			<Badge>Badge</Badge>

@@ -19,7 +19,6 @@ declare type card_props = {
     children: default_2.ReactNode;
     no_spacing?: boolean;
     outline?: boolean;
-    expand?: boolean;
     className?: string;
     style?: CSSProperties;
 };

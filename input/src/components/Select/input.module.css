@@ -1,8 +1,6 @@
 .label {
     font-weight: bold;
     font-size: 1rem;
-    /* line-height: 120%; */
-    /* letter-spacing: 0.05rem; */
 }
 
 .select {
@@ -19,6 +17,7 @@
 
 .select:focus {
     outline: none;
+    border: var(--border-width) solid var(--accent);
 }
 
 .error {
