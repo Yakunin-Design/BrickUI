@@ -6,7 +6,7 @@
 
 .default_spacing {
     margin-top: 2em;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 @media (min-width: 700px) {
