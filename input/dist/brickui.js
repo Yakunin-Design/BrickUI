@@ -38,7 +38,7 @@ const M = "_label_wo8kf_1", W = "_input_wo8kf_8", B = "_error_wo8kf_24", F = "_e
   input: W,
   error: B,
   error_label: F
-}, I = "_row_19uuv_1", P = "_start_19uuv_7", Z = "_end_19uuv_11", m = {
+}, I = "_row_19uuv_1", P = "_start_19uuv_7", Z = "_end_19uuv_11", b = {
   row: I,
   start: P,
   end: Z
@@ -50,7 +50,7 @@ function G(e) {
     gap: (e.gap || 0) + "rem",
     justifyContent: e.gap ? "flex-start" : "space-between"
   };
-  return e.justifyContent && (l.justifyContent = e.justifyContent), e.align === "start" && (n += " " + m.start), e.align === "end" && (n += " " + m.end), n += " " + m.row, /* @__PURE__ */ t(
+  return e.justifyContent && (l.justifyContent = e.justifyContent), e.align === "start" && (n += " " + b.start), e.align === "end" && (n += " " + b.end), n += " " + b.row, /* @__PURE__ */ t(
     "div",
     {
       className: n,
@@ -61,7 +61,7 @@ function G(e) {
     }
   );
 }
-function u(e) {
+function m(e) {
   const { top: n, bottom: l, left: a, children: i } = e, o = {
     marginTop: n ? `${n}rem` : "0rem",
     marginBottom: l ? `${l}rem` : "0rem",
@@ -74,7 +74,7 @@ function ne(e) {
   return e.error && (n = n + " " + h.error), e.className && (n = n + " " + e.className), /* @__PURE__ */ r(d, { children: [
     e.label && /* @__PURE__ */ r(d, { children: [
       /* @__PURE__ */ t("label", { className: h.label, htmlFor: e.name, children: e.label }),
-      /* @__PURE__ */ t(u, { top: 0.5 })
+      /* @__PURE__ */ t(m, { top: 0.5 })
     ] }),
     /* @__PURE__ */ t(
       "input",
@@ -134,7 +134,7 @@ function le(e) {
   let a = s.input;
   return e.error && (a = a + " " + s.error), e.className && (a = a + " " + e.className), /* @__PURE__ */ r(d, { children: [
     e.label && /* @__PURE__ */ t("label", { className: s.label, htmlFor: e.name, children: e.label }),
-    /* @__PURE__ */ t(u, { top: 0.5 }),
+    /* @__PURE__ */ t(m, { top: 0.5 }),
     /* @__PURE__ */ r("div", { className: s.icon_wrapper, children: [
       /* @__PURE__ */ t(
         "input",
@@ -201,7 +201,7 @@ function ae(e) {
     e.error && /* @__PURE__ */ t("p", { className: _.error_label, children: e.error })
   ] });
 }
-const K = "_label_14ovd_1", Q = "_select_14ovd_6", U = "_error_14ovd_23", V = "_error_label_14ovd_27", b = {
+const K = "_label_14ovd_1", Q = "_select_14ovd_6", U = "_error_14ovd_23", V = "_error_label_14ovd_27", u = {
   label: K,
   select: Q,
   error: U,
@@ -215,11 +215,11 @@ function re(e) {
       /* @__PURE__ */ t("option", { value: o, children: a }, n.length)
     );
   });
-  let l = b.select;
-  return e.error && (l = l + " " + b.error), e.className && (l = l + " " + e.className), /* @__PURE__ */ r(d, { children: [
+  let l = u.select;
+  return e.error && (l = l + " " + u.error), e.className && (l = l + " " + e.className), /* @__PURE__ */ r(d, { children: [
     e.label && /* @__PURE__ */ r(d, { children: [
-      /* @__PURE__ */ t("label", { className: b.label, htmlFor: e.name, children: /* @__PURE__ */ t("h3", { children: e.label }) }),
-      /* @__PURE__ */ t(u, { top: 0.5 })
+      /* @__PURE__ */ t("label", { className: u.label, htmlFor: e.name, children: /* @__PURE__ */ t("h3", { children: e.label }) }),
+      /* @__PURE__ */ t(m, { top: 0.5 })
     ] }),
     /* @__PURE__ */ t(
       "select",
@@ -231,7 +231,8 @@ function re(e) {
         value: e.value,
         children: n
       }
-    )
+    ),
+    e.error && /* @__PURE__ */ t("p", { className: u.error_label, children: e.error })
   ] });
 }
 const Y = "_textarea_17ec2_1", g = {
@@ -240,7 +241,7 @@ const Y = "_textarea_17ec2_1", g = {
 function ie(e) {
   return /* @__PURE__ */ r(d, { children: [
     e.label && /* @__PURE__ */ t("label", { className: g.label, htmlFor: e.name, children: /* @__PURE__ */ t("h3", { children: e.label }) }),
-    /* @__PURE__ */ t(u, { top: 1 }),
+    /* @__PURE__ */ t(m, { top: 1 }),
     /* @__PURE__ */ t(
       "textarea",
       {

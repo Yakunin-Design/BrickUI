@@ -52,6 +52,8 @@ export default function Select(props: props) {
             >
                 {options}
             </select>
+
+			{props.error && <p className={styles.error_label}>{props.error}</p>}
         </>
     );
 }
