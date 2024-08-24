@@ -23,6 +23,8 @@ declare type button_props = {
 
 export declare function Checkbox(props: props_3): JSX_2.Element;
 
+export declare function DateInput(props: props_7): JSX_2.Element;
+
 export declare function Input(props: props): JSX_2.Element;
 
 export declare function PasswordInput(props: props_2): JSX_2.Element;
@@ -85,8 +87,31 @@ declare type props_5 = {
     style?: CSSProperties;
 };
 
+declare type props_6 = {
+    name: string;
+    onChange: (event: any) => void;
+    placeholder?: string;
+    label?: string;
+    value?: string | number;
+    className?: string;
+    error?: string;
+    style?: CSSProperties;
+    disabled?: boolean;
+    pattern?: string;
+};
+
+declare type props_7 = {
+    value: string | Date;
+    name: string;
+    onChange: (event: any) => void;
+    error?: string;
+    label?: string;
+};
+
 export declare function Select(props: props_4): JSX_2.Element;
 
 export declare function TextArea(props: props_5): JSX_2.Element;
+
+export declare function TimeInput(props: props_6): JSX_2.Element;
 
 export { }

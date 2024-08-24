@@ -4,6 +4,8 @@ import PasswordInput from "./components/PasswordInput";
 import Checkbox from "./components/Checkbox";
 import Select from "./components/Select";
 import TextArea from "./components/TextArea";
+import TimeInput from "./components/TimeInput";
+import DateInput from "./components/DateInput";
 
 export { 
 	Button,
@@ -11,5 +13,7 @@ export {
 	PasswordInput,
 	Checkbox,
 	Select,
-	TextArea
+	TextArea,
+	TimeInput,
+	DateInput
 };

@@ -16,11 +16,14 @@ export default function TextArea(props: props) {
     return (
         <>
             {props.label && (
-                <label className={styles.label} htmlFor={props.name}>
-                    <h3>{props.label}</h3>
-                </label>
+				<>
+					<label className={styles.label} htmlFor={props.name}>
+						<h3>{props.label}</h3>
+					</label>
+					<Spacer top={.5} />
+				</>
             )}
-            <Spacer top={1} />
+
             <textarea
                 className={
                     props.className
