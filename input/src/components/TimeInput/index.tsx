@@ -5,9 +5,9 @@ import { useState, useEffect, type CSSProperties } from "react";
 type props = {
     name: string;
     onChange: (event: any) => void;
+    value: string | number;
     placeholder?: string;
     label?: string;
-    value?: string | number;
     className?: string;
 	error?: string;
     style?: CSSProperties;
@@ -20,7 +20,7 @@ export default function TimeInput(props: props) {
 	if (props.error) input_style = input_style + " " + styles.error;
 	if (props.className) input_style = input_style + " " + props.className;
 
-	const [time, set_time] = useState("");
+	const [time, set_time] = useState(props.value);
 
     function handle_change(event: React.ChangeEvent<HTMLInputElement>) {
         let input = event.target.value;

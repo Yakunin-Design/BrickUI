@@ -90,9 +90,9 @@ declare type props_5 = {
 declare type props_6 = {
     name: string;
     onChange: (event: any) => void;
+    value: string | number;
     placeholder?: string;
     label?: string;
-    value?: string | number;
     className?: string;
     error?: string;
     style?: CSSProperties;

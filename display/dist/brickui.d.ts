@@ -9,6 +9,7 @@ declare type badge_props = {
     outline?: boolean;
     accent?: boolean;
     secondary?: boolean;
+    mini?: boolean;
     className?: string;
     style?: CSSProperties;
 };

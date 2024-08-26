@@ -18,7 +18,8 @@
 }
 
 .input:focus {
-    border: 2px solid var(--accent);
+    outline: none;
+    border: var(--border-width) solid var(--accent);
 }
 
 .error {

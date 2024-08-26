@@ -1,8 +1,8 @@
 import { jsx as c } from "react/jsx-runtime";
-import './index.css';const s = "_base_3jjh0_1", l = "_default_spacing_3jjh0_7", i = "_outline_3jjh0_18", t = {
-  base: s,
-  default_spacing: l,
-  outline: i
+import './index.css';const i = "_base_3jjh0_1", s = "_default_spacing_3jjh0_7", l = "_outline_3jjh0_18", t = {
+  base: i,
+  default_spacing: s,
+  outline: l
 };
 function y(e) {
   let n = t.base;
@@ -15,15 +15,16 @@ function y(e) {
     }
   );
 }
-const _ = "_base_174nd_1", d = "_accent_174nd_8", o = "_secondary_174nd_13", u = "_outline_174nd_18", a = {
+const _ = "_base_1ea4x_1", d = "_accent_1ea4x_8", o = "_secondary_1ea4x_13", u = "_outline_1ea4x_18", f = "_mini_1ea4x_23", a = {
   base: _,
   accent: d,
   secondary: o,
-  outline: u
+  outline: u,
+  mini: f
 };
 function b(e) {
   let n = a.base;
-  return e.accent && (n += " " + a.accent), e.outline && (n += " " + a.outline), e.secondary && (n += " " + a.secondary), e.className && (n += " " + e.className), /* @__PURE__ */ c(
+  return e.accent && (n += " " + a.accent), e.outline && (n += " " + a.outline), e.mini && (n += " " + a.mini), e.secondary && (n += " " + a.secondary), e.className && (n += " " + e.className), /* @__PURE__ */ c(
     "div",
     {
       className: n,

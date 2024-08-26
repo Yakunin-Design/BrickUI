@@ -43,10 +43,11 @@ export default function DateInput(props: props) {
 	const [date, set_date] = useState<date_input>(default_input);
 
     function handle_change(event: React.ChangeEvent<HTMLInputElement>) {
-        const { name, value } = event.target;
+        const name = event.target.name;
+		let value = event.target.value;
+
 		if(name === "day") {
 			const day_value: string = value.toString();
-			if(Number(day_value[0]) > 3) return;
 			if(Number(day_value) > 31) return;
 		}
 

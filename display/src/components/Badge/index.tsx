@@ -6,6 +6,7 @@ type badge_props = {
     outline?: boolean;
     accent?: boolean;
     secondary?: boolean;
+	mini?: boolean;
     className?: string;
     style?: CSSProperties;
 };
@@ -18,6 +19,9 @@ export default function Bagde(props: badge_props) {
 
     if (props.outline)
         card_styles += " " + styles.outline;
+
+    if (props.mini)
+        card_styles += " " + styles.mini;
 
     if (props.secondary)
         card_styles += " " + styles.secondary;
