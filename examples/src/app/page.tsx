@@ -11,16 +11,17 @@ import {
 	Checkbox,
 	Select,
 	TextArea,
-	TimeInput
+	TimeInput,
+	DateInput
 } from "brick-uikit/input";
 
 export default function Home() {
-	const [time, set_time] = useState("07:00");
+	const [date, set_date] = useState(new Date());
 
 	function handle_change(event: React.ChangeEvent<HTMLElement>) {
 		const { name, value } = event.target;
 		
-		set_time(value);
+		set_date(value);
 	}
 
 	return (
@@ -28,9 +29,9 @@ export default function Home() {
 			<Spacer top={2}/>
 			<h1>Brick UI examples</h1>
 
-			<TimeInput
-				name="time"
-				value={time}
+			<DateInput
+				name="date"
+				value={date}
 				onChange={handle_change}
 			/>
 

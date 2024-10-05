@@ -20,8 +20,6 @@ export default function TimeInput(props: props) {
 	if (props.error) input_style = input_style + " " + styles.error;
 	if (props.className) input_style = input_style + " " + props.className;
 
-	const [time, set_time] = useState(props.value);
-
     function handle_change(event: React.ChangeEvent<HTMLInputElement>) {
         let input = event.target.value;
 
@@ -53,19 +51,15 @@ export default function TimeInput(props: props) {
         if (input.length > 2) 
             input = `${input.slice(0, 2)}:${input.slice(2, 4)}`;
 
-        set_time(input);
-    };
-
-	useEffect(() => {
 		const event_emulation = {
 			target: {
 				name: props.name,
-				value: time
+				value: input
 			}
 		};
 
 		props.onChange(event_emulation);
-	}, [time]);
+    };
 
     return (
 		<>

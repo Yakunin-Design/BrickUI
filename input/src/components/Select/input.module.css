@@ -13,6 +13,7 @@
 
     font-size: 1rem;
 	color: var(--text);
+	-webkit-appearance: none;
 }
 
 .select:focus {
