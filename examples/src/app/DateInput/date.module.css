@@ -1,0 +1,15 @@
+.day {
+	width: calc(2ch + 1.2em + 1.2em + 1px) !important;
+}
+
+.year {
+	width: calc(4ch + 1.2em + 1.2em + 1px) !important;
+}
+
+.error {
+    border-color: var(--error);
+}
+
+.error_label {
+	color: var(--error); 
+}
