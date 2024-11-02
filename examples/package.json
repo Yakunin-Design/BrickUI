@@ -9,9 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@brick-uikit/display": "^0.1.4",
-    "@brick-uikit/input": "^0.2.3",
-    "@brick-uikit/layout": "^0.1.6",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18"

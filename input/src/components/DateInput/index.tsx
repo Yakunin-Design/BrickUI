@@ -22,7 +22,7 @@ function get_month_names(locale: string): string[] {
 }
 
 type props = { 
-    value: Date;  // The parent passes a Date object
+    value: Date;
     name: string;
     onChange: (event: any) => void;
     error?: string;
@@ -86,7 +86,7 @@ export default function DateInput(props: props) {
         const event_emulation = {
             target: {
                 name: props.name,
-                value: new_date,  // Pass the new Date object
+                value: new_date,
             }
         };
 		
@@ -104,10 +104,10 @@ export default function DateInput(props: props) {
             <Row>
 				<Input 
 					name="day"
-					value={day}  // Controlled day value
+					value={day}
 					type="tel"
 					maxLength={2}
-					onChange={handle_change}  // Pass changes up
+					onChange={handle_change}
 					className={styles.day}
 					error={props.error && " "}
 				/>
