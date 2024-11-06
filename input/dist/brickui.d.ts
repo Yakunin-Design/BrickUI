@@ -101,7 +101,7 @@ declare type props_6 = {
 };
 
 declare type props_7 = {
-    value: string | Date;
+    value: Date;
     name: string;
     onChange: (event: any) => void;
     error?: string;
