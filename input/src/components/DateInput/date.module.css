@@ -1,9 +1,9 @@
 .day {
-	width: calc(2ch + 1.2em + 1.2em + 1px) !important;
+	width: calc(2ch + 2.5em + 5px) !important;
 }
 
 .year {
-	width: calc(4ch + 1.2em + 1.2em + 1px) !important;
+	width: calc(4ch + 2.5em + 1px) !important;
 }
 
 .error {

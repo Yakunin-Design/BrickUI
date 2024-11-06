@@ -1,9 +1,9 @@
 "use client";
-import { Row, Spacer } from "@brick-uikit/layout";
 import { useEffect, useState } from "react";
+import styles from "./date.module.css";
 import Input from "../Input";
 import Select from "../Select";
-import styles from "./date.module.css";
+import { Row, Spacer } from "@brick-uikit/layout";
 
 function get_month_names(locale: string): string[] {
     if (locale === "ru-RU") {
@@ -30,11 +30,11 @@ type props = {
 };
 
 export default function DateInput(props: props) {
-    const today = props.value;
-	const [day, set_day] = useState(today.getDate().toString());
+    const today = new Date(props.value);
+	const [day, set_day] = useState(today && today.getDate().toString());
 	const [month_names, set_month_names] = useState<string[]>([]);
-	const [selected_month, set_selected_month] = useState(today.toLocaleString("default", { month: 'long' }));
-	const [year, set_year] = useState(today.getFullYear().toString()); // Get the user's locale
+	const [selected_month, set_selected_month] = useState(today && today.toLocaleString("default", { month: 'long' }));
+	const [year, set_year] = useState(today && today.getFullYear().toString()); // Get the user's locale
 
 	useEffect(() => {
         // client-side locale detection
@@ -104,10 +104,10 @@ export default function DateInput(props: props) {
             <Row>
 				<Input 
 					name="day"
-					value={day}
+					value={day}  // Controlled day value
 					type="tel"
 					maxLength={2}
-					onChange={handle_change}
+					onChange={handle_change}  // Pass changes up
 					className={styles.day}
 					error={props.error && " "}
 				/>

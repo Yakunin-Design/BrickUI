@@ -1,27 +1,37 @@
 "use client";
 import styles from "./page.module.css";
 import { useState } from "react";
-import { Container, Spacer } from "brick-uikit/layout";
-import { Button, Input, DateInput, TimeInput } from "brick-uikit/input";
+import { Container, Spacer, Padding, Divider, Row } from "brick-uikit/layout";
+import { RadioGroup, Radio } from "brick-uikit/experimental";
+import { Badge, Card } from "brick-uikit/display";
+import { 
+	Button,
+	Input,
+	PasswordInput,
+	Checkbox,
+	Select,
+	TextArea,
+	TimeInput,
+	DateInput
+} from "brick-uikit/input";
 
 export default function Home() {
-	const [date, set_date] = useState(new Date());
+	const [date, set_date] = useState({
+		date: new Date()
+	});
 
 	function handle_change(event: any) {
 		const { name, value } = event.target;
-		console.log(value);
-		set_date(new Date(value));
+		
+		set_date(prev => {
+			return {
+				...prev,
+				[name]: value
+			}
+		})
 	}
-
-	function send(): void {
-		if(!date || 
-			isNaN(Date.parse(date.toString())) ||
-			date.getDate() < 1 ||
-			date.getFullYear() < new Date().getFullYear() - 1) {
-				console.log("Error: " + date)
-				return;
-		}
-		console.log("Hi mom: " + date)
+	function save() {
+		console.log(date.date);
 	}
 
 	return (
@@ -31,12 +41,13 @@ export default function Home() {
 
 			<DateInput
 				name="date"
-				value={date}
+				value={date.date}
 				onChange={handle_change}
 			/>
+
 			<Spacer top={2}/>
 
-			<Button children={"send"} onClick={send} />
+			<Button onClick={save}>Save</Button>
 			<Spacer top={20}/>
 		</Container>
 	);
