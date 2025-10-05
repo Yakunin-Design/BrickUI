@@ -21,8 +21,10 @@
       "@/hooks/*": ["./src/*"],
       "brick-uikit/layout": ["../layout"],
       "brick-uikit/input": ["../input"],
-      "brick-uikit/display": ["../display"],
       "brick-uikit/experimental": ["../experimental"],
+      "@/components/*": [
+        "./src/components/*"
+      ],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

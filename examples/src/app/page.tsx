@@ -1,134 +1,53 @@
 "use client";
 import styles from "./page.module.css";
-import { Container, Spacer, Divider, Hidden, Row } from "brick-uikit/layout";
-import { RadioGroup, Radio } from "brick-uikit/experimental";
-import { 
-	Button,
-	Input,
-	PasswordInput,
-	Checkbox,
-	Select,
-	TextArea
-} from "brick-uikit/input";
-
-type color_props = {
-	hue: number,
-	saturation: number,
-	lightness: number
-}
-
-function colorBlock(color_props: color_props){
-	return (
-		<div 
-			className={styles.block} 
-			key={l+s}
-			style={{background: `hsl(${color_props.hue}%, ${color_props.saturation}%, ${color_props.lightness}%)`}}
-		></div>
-	)
-}
-
-let color_blocks1 = [];
-let color_blocks2 = [];
-let color_blocks3 = [];
-
-let s = 99;
-let l = 1;
-let step = 4.76;
-
-for(let x = 0; x < 21; x++) {
-	s -= step;	
-	l += step;
-	color_blocks1.push(
-		<div 
-			className={styles.block} 
-			key={l+s}
-			style={{background: `hsl(100, ${s}%, ${l}%)`}}
-		></div>
-	);
-}
-
-s = 99;
-l = 1;
-step = 16;
-
-for(let x = 0; x < 7; x++) {
-	s -= step;	
-	l += step;
-	color_blocks2.push(
-		<div 
-			className={styles.block} 
-			key={s+l}
-			style={{background: `hsl(100, ${s}%, ${l}%)`}}
-		></div>
-	);
-}
-
-s = 100;
-l = 1;
-step = .5;
-
-for(let x = 0; x < 7; x++) {
-	s -= step;	
-	l += step;
-	color_blocks3.push(
-		<div 
-			className={styles.block} 
-			key={s+l}
-			style={{background: `hsl(100, ${s}%, ${l}%)`}}
-		></div>
-	);
-}
+import { Container, Spacer, Row } from "brick-uikit/layout";
+import { Button } from "brick-uikit/input";
+import CodeBlock from "@/components/CodeBlock";
+import Link from "next/link";
+import PhilosophyPoints from "@/components/PhilosophyPoints";
 
 export default function Home() {
-	const options = ["apple", "orange"];
-
-	function handle_change() {
-		console.log("change!");
-	}
-
 	return (
-		<>
-			<Hidden>
-				<Container>
-					<Spacer top={2}/>
-					<h1>Brick UI examples</h1>
-					<Button>Hello</Button>
-					<Button secondary>Hello</Button>
-					<Button outline>Hello</Button>
-					<Button ghost>Hello</Button>
-					<Spacer top={2}/>
-					<RadioGroup name="test">
-						<Radio>
-							Hello
-						</Radio>
-					</RadioGroup>
-
-					<Spacer top={2}/>
-
-					<Input name="test" onChange={handle_change}/>
-					<PasswordInput name="password" onChange={handle_change}/>
-					<Divider text={"or register with"} />
-					<Checkbox />
-					<Select name="select" onChange={handle_change} options={options}/>
-					<TextArea name="textArea" onChange={handle_change}/>
-				</Container>
-			</Hidden>
-			<Container>
-				<Spacer top={10}/>
-				<Row>
-					{color_blocks1}
+		<Container wrapper>
+			<section className={styles.hero}>
+				<Spacer top={15}/>
+				<h1>Build interfaces like stacking bricks</h1>
+				<Spacer top={1}/>
+				<p className={styles.description}>
+					Component library built around declarative components that encapsulate logic and behavior, so you can build interfaces like stacking bricks — modular, predictable, and fast.
+				</p>
+				<br/>
+				<Row gap={1} className={styles.cta}>
+					<Button href="/installation">Installation</Button>
+					<Button href="/component-gallery" secondary>Component Gallery</Button>
 				</Row>
+			</section>
 
-				<Spacer top={2}/>
-				<Row>
-					{color_blocks2}
-				</Row>
+			<h2>Philosophy Points</h2>
+			<Spacer top={1}/>
+			<PhilosophyPoints/>
 
-				<Spacer top={2}/>
-				<Row>
-					{color_blocks3}
-				</Row>
-			</Container>
-		</>
+			<Spacer top={3}/>
+			<h2>Library strucrute</h2>
+			<Spacer top={1}/>
+			<p>
+				@brick-uikit/layout - 
+				<br/>
+				@brick-uikit/input - 
+				<br/>
+				@brick-uikit/display - 
+				<br/>
+			</p>
+
+			<Spacer top={3}/>
+			<h2>Intall now</h2>
+			<Spacer top={1}/>
+			<CodeBlock
+				lang="jsx"
+				code="yarn add @brick-uikit/layout"
+				terminal
+			/>
+
+		</Container>
 	);
 }

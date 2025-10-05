@@ -1,0 +1,41 @@
+.component_card {
+	background: #1D1D1D;
+	min-height: 285px;
+	margin-top: 0px !important;
+}
+
+.icon {
+	height: 100px;
+	width: 100%;
+}
+
+.experimental {
+	min-height: 225px;
+	background: #1D1D1D;
+	margin-top: 0px !important;
+}
+
+.experimental img{
+	height: 20px;
+	width: auto;
+	margin-bottom: 1rem;
+}
+
+.grid {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (min-width: 800px) {
+	.component_card {
+		min-height: 270px;
+		margin-top: 0px !important;
+	}
+
+	.grid {
+		grid-gap: 2rem;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+

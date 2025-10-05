@@ -1,5 +1,18 @@
-.block {
-	width: 40px;
-	height: 40px;
-	border-radius: 10px;
+.hero {
+	min-height: 50vh;
+	text-align: center;
+}
+
+.description {
+	font-size: 1rem;
+}
+
+.cta {
+	justify-content: center !important;
+}
+
+@media only screen and (min-width: 800px) {
+	.description {
+		font-size: 1.2rem;
+	}
 }

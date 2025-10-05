@@ -1,0 +1,38 @@
+.code {
+	font-size: 14px;
+	background: #1d1d1d;
+	padding: 1rem;
+	border-radius: 0 0 0.5rem 0.5rem;
+	color: white;
+	whitespace: pre;
+	overflow-x: scroll;
+	scroll-width: none;
+}
+
+.code::-webkit-scrollbar {
+	display: none;
+}
+
+.caption {
+	color: white;
+	background: #1d1d1d;
+	padding: .7rem;
+	padding-left: 1rem;
+	border-bottom: 1px solid grey;
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.copy {
+	cursor: pointer;
+}
+
+.copy:hover {
+	background: #1e1e1e;
+	border-radius: 0.2rem;
+}
+
+@media only screen and (min-width: 800px) { 
+	.code {
+		font-size: 16px;
+	}
+}

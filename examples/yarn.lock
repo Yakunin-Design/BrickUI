@@ -5,6 +5,16 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@brick-uikit/display@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "@brick-uikit/display@npm:0.1.4"
+  peerDependencies:
+    react: ^18.3.1
+    react-dom: ^18.3.1
+  checksum: 10c0/0789eea853ffc1e80a4a24261cfb76ab2f384f6bad16f8b455ce6faea60e338d3ab266b89ffa67af44c16f1cd2f60f0bad7b4cac442713da9c55a9cf85f36986
+  languageName: node
+  linkType: hard
+
 "@next/env@npm:14.2.5":
   version: 14.2.5
   resolution: "@next/env@npm:14.2.5"
@@ -101,6 +111,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/prismjs@npm:^1":
+  version: 1.26.5
+  resolution: "@types/prismjs@npm:1.26.5"
+  checksum: 10c0/5619cb449e0d8df098c8759d6f47bf8fdd510abf5dbdfa999e55c6a2545efbd1e209cc85a33d8d9f4ff2898089a1a6d9a70737c9baffaae635c46852c40d384a
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.12
   resolution: "@types/prop-types@npm:15.7.12"
@@ -161,10 +178,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "examples@workspace:."
   dependencies:
+    "@brick-uikit/display": "npm:^0.1.4"
     "@types/node": "npm:^20"
+    "@types/prismjs": "npm:^1"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
     next: "npm:14.2.5"
+    prismjs: "npm:^1.30.0"
     react: "npm:^18"
     react-dom: "npm:^18"
     typescript: "npm:^5"
@@ -278,6 +298,13 @@ __metadata:
     picocolors: "npm:^1.0.0"
     source-map-js: "npm:^1.0.2"
   checksum: 10c0/748b82e6e5fc34034dcf2ae88ea3d11fd09f69b6c50ecdd3b4a875cfc7cdca435c958b211e2cb52355422ab6fccb7d8f2f2923161d7a1b281029e4a913d59acf
+  languageName: node
+  linkType: hard
+
+"prismjs@npm:^1.30.0":
+  version: 1.30.0
+  resolution: "prismjs@npm:1.30.0"
+  checksum: 10c0/f56205bfd58ef71ccfcbcb691fd0eb84adc96c6ff21b0b69fc6fdcf02be42d6ef972ba4aed60466310de3d67733f6a746f89f2fb79c00bf217406d465b3e8f23
   languageName: node
   linkType: hard
 

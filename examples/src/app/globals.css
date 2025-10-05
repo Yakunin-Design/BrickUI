@@ -33,17 +33,26 @@
 
 .dark {
 	/* Theme changed */
-    --background: #09090B;
+    --background: #111111;
 	--border: #212121;
 	--title: white;
 	--text: #F3F3F3;
 	--accent: white;
 	--error: #8D0000;
-	--contrast: black;
+	--contrast: #040404;
 }
 
 body {
     background: var(--background);
+	font-family: var(--font-ibm-plex-sans);
+}
+
+h1, h2, h3, h4 {
+	font-family: var(--font-space-grotesk);
+}
+
+code, pre {
+	font-family: var(--font-jetbrains-mono), monospace;
 }
 
 * {
@@ -60,21 +69,28 @@ body {
 }
 
 a {
-    color: inherit;
+    color: var(--text);
     text-decoration: none;
 }
 
+a:hover {
+	text-shadow: 0 0 7px #ff4600;
+	cursor: pointer
+}
+
 h1 {
-    font-size: 24px;
+    font-size: 2rem;
 	color: var(--title);
 }
 
 h2 {
-	font-size: 18px;
+	font-size: 1.5rem;
+	color: var(--title);
 }
 
 h3 {
 	font-size: 16px;
+	color: var(--title);
 }
 
 h4 {
@@ -86,6 +102,3 @@ p {
 	color: var(--text);
 }
 
-body {
-	background: black;
-}
