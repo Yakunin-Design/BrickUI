@@ -1,10 +1,7 @@
 .hero {
 	margin-top: -3rem;
 	width: 100%;
-	height: 100vh;
 	text-align: center;
-	background-color: #111;
-	background-image: url("/small-grid.svg");
 	positoin: relative;
 }
 
@@ -13,27 +10,21 @@
 	height: calc(100vh) + 3rem;
 }
 
-.tile {
-	opacity: 0;
-	transition: opacity 0.3s ease, filter 0.3s ease;
-}
-
-.tile:hover {
-	opacity: 1;
-	filter: drop-shadow(0 0 3px #ff4600);
-}
-
 .title {
-	width: 40vw;
+	width: 80vw;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-.action {
+.action_bar {
 	background: #212121;
 	width: 100%;
+}
+
+.cta_group {
+	display: block !important;
 }
 
 .description {
@@ -41,7 +32,15 @@
 }
 
 .cta {
-	justify-content: center !important;
+	padding-top: 2rem;
+	padding-bottom: 8.6rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	border-radius: 4px;
+}
+
+.cta h2 {
+	font-weight: normal;
 }
 
 .btn:hover {
@@ -52,5 +51,23 @@
 @media only screen and (min-width: 800px) {
 	.description {
 		font-size: 1.2rem;
+	}
+
+	.title {
+		width: 40vw;
+	}
+	
+	.cta_group {
+		display: flex !important;
+	}
+
+	.cta {
+		min-width: 30%;
+	}
+
+	.cta:hover {
+		background: #2b2b2b;
+		cursor: pointer;
+		text-shadow: none;
 	}
 }

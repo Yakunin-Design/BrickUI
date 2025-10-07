@@ -43,10 +43,6 @@
 }
 
 body {
-	background: var(--background);
-}
-
-body {
     background: var(--background);
 	background-image: url("/background.svg");
 	background-repeat: repeat;

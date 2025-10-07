@@ -2,7 +2,7 @@ import styles from "./graphics.module.css";
 
 export default function HeroGraphics() {
 	return (
-		<svg width="1470" height="588" viewBox="0 0 1470 588" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg viewBox="0 0 1470 588" fill="none" xmlns="http://www.w3.org/2000/svg">
 		  <g id="Group 96">
 			<rect id="tile" x="0.25" y="0.25" width="97.5" height="97.5" fill="#111111" stroke="#2B2B2B" stroke-width="0.5"/>
 			<rect id="tile_2" x="0.25" y="196.25" width="97.5" height="97.5" fill="#111111" stroke="#2B2B2B" stroke-width="0.5"/>

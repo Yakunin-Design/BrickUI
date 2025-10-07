@@ -12,9 +12,7 @@ export default function Home() {
 	return (
 		<>
 			<section className={styles.hero}>
-				
 				<HeroGraphics/>
-				
 				<div className={styles.title}>
 					<h1>Build interfaces like stacking bricks</h1>
 					<Spacer top={1}/>
@@ -23,12 +21,21 @@ export default function Home() {
 					</p>
 				</div>
 			</section>
-			<div className={styles.action}>
+			<div className={styles.action_bar}>
 				<Container>
-					<Row>
-						<h2>1. Philosophy</h2>
-						<h2>2. Installation</h2>
-						<h2>3. Component Gallery</h2>
+					<Row className={styles.cta_group}>
+						<Link href={"/philosophy"} className={styles.cta}>
+							<p>1.</p>
+							<h2>Philosophy</h2>
+						</Link>
+						<Link href={"/installation"} className={styles.cta}>
+							<p>2.</p>
+							<h2>Installation</h2>
+						</Link>
+						<Link href={"/component-gallery"} className={styles.cta}>
+							<p>3.</p>
+							<h2>Component Gallery</h2>
+						</Link>
 					</Row>
 				</Container>
 			</div>
