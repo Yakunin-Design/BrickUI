@@ -1,5 +1,5 @@
 import { Card } from "@brick-uikit/display";
-import { Spacer } from "brick-uikit/layout";
+import { Spacer } from "@brick-uikit/layout";
 import styles from "./points.module.css";
 
 export default function PhilosophyPonits() {

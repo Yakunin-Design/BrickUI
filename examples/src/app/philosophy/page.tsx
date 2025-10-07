@@ -1,18 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Container, Spacer, Row } from "brick-uikit/layout";
+import { Container, Spacer, Row } from "@brick-uikit/layout";
 import { Card, Badge } from "@brick-uikit/display";
 import PhilosophyPoints from "@/components/PhilosophyPoints";
 
-import styles from "./quick_start.module.css";
+import styles from "./philosophy.module.css";
 
 export default function YappingPage() {
 	return (
 		<Container wrapper>
 			<h1>Philosophy</h1>
-			<p>
-				Brick is a uikit that is inspired by *Flutter widgets* and react's idea of
-				making components descriptive and *diclarative*
+			<p className={styles.descrption}>
+				Brick is a uikit that is inspired by <em><Link target="_blank" href="https://docs.flutter.dev/">Flutter widgets</Link></em> and react's idea of
+				making components descriptive and <em><Link target="_blank" href="https://react.dev/reference/rules">diclarative</Link></em>
 				
 				<br/>
 				The components should encapsulate the logic in them and create abstraction

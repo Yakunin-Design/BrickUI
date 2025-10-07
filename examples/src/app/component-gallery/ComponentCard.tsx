@@ -1,7 +1,7 @@
 import Link from "next/link"; 
 import Image from "next/image";
 import { Card } from "@brick-uikit/display";
-import { Spacer } from "brick-uikit/layout";
+import { Spacer } from "@brick-uikit/layout";
 
 import styles from "./components.module.css";
 
@@ -50,7 +50,7 @@ export default function ComponentCard(props: props) {
 	if (props.icon === "textarea") icon = textarea_icon;
 
 	return (
-		<Link href={"/components/" + props.icon}>
+		<Link href={"/component-gallery/" + props.icon}>
 			<Card className={props.experimental ? styles.experimental : styles.component_card}>
 				<Image
 				  src={icon}

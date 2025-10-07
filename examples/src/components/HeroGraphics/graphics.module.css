@@ -1,0 +1,14 @@
+.tile:hover {
+	fill: #2b2b2b;
+}
+
+.preview {
+	opacity: 0;
+	transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.preview:hover {
+	opacity: 1;
+	cursor: crosshair;
+	filter: drop-shadow(0 0 3px #ff4600);
+}

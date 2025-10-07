@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Container, Spacer, Row } from "brick-uikit/layout";
+import { Container, Spacer, Row } from "@brick-uikit/layout";
 import { Card, Badge } from "@brick-uikit/display";
 import CodeBlock from "@/components/CodeBlock";
 

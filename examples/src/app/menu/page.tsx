@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import { Container, Spacer } from "brick-uikit/layout";
+import { Container, Spacer } from "@brick-uikit/layout";
 import Link from "next/link";
 
 export default function Menu() {

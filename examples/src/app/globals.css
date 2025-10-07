@@ -43,12 +43,32 @@
 }
 
 body {
+	background: var(--background);
+}
+
+body {
     background: var(--background);
-	font-family: var(--font-ibm-plex-sans);
+	background-image: url("/background.svg");
+	background-repeat: repeat;
+	background-size: 20vw 20vw;
+	font-family: var(--font-ibm-plex-sans), sans-serif;
+}
+
+
+@media only screen and (min-width: 800px) {
+	body {
+		background-size: 10vw 10vw;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	body {
+		background-size: 5vw 5vw;
+	}
 }
 
 h1, h2, h3, h4 {
-	font-family: var(--font-space-grotesk);
+	font-family: var(--font-space-grotesk), sans-serif;
 }
 
 code, pre {
@@ -76,6 +96,15 @@ a {
 a:hover {
 	text-shadow: 0 0 7px #ff4600;
 	cursor: pointer
+}
+
+em {
+	text-shadow: 0 0 7px #ff4600;
+	font-style: normal;
+}
+
+em:hover {
+	text-decoration: underline;
 }
 
 h1 {

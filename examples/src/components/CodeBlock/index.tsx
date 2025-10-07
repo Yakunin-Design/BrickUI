@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Row } from "brick-uikit/layout";
+import { Row } from "@brick-uikit/layout";
 import { useState } from "react";
 
 import copy_icon from "./copy_icon.svg";

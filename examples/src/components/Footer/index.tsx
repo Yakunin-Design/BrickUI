@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Container, Row } from "brick-uikit/layout";
+import { Container, Row } from "@brick-uikit/layout";
 import styles from "./footer.module.css";
 import logo from "./logo.svg";
 
