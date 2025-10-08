@@ -1,4 +1,6 @@
-import { Container } from "@brick-uikit/layout";
+import { Container, Spacer } from "@brick-uikit/layout";
+import dataset from "./components_dataset.json";
+import CodeBlock from "@/components/CodeBlock";
 
 interface PageProps {
   params: {
@@ -9,7 +11,13 @@ interface PageProps {
 export default function ComponentPage({ params }: PageProps) {
 	return (
 		<Container wrapper>
-			<h1>{params.id}</h1>
+			<h1>{dataset.container.name}</h1>
+			<p>{dataset.container.description}</p>
+			<Spacer top={1}/>
+			<CodeBlock
+				lang="jsx"
+				code={dataset.container.code}
+			/>
 		</Container>
 	);
 } 

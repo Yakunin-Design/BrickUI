@@ -62,7 +62,7 @@ export default function ComponentGalleryPage() {
 					/>
 					<ComponentCard
 						name="PasswordInput"
-						description="Input field that hides characters keep sensitive information private"
+						description="Input field that hides characters to keep sensitive info"
 						icon="password_input"
 					/>
 					<ComponentCard
@@ -77,7 +77,7 @@ export default function ComponentGalleryPage() {
 					/>
 					<ComponentCard
 						name="Checkbox"
-						description="A small box that users can check or uncheck to toggle an option on or off"
+						description="A small box that users can check or uncheck"
 						icon="checkbox"
 					/>
 					<ComponentCard
@@ -92,14 +92,14 @@ export default function ComponentGalleryPage() {
 				</Spacer>
 				<div className={styles.grid}>
 					<ComponentCard
-						name="Badge"
-						description="A small label used to highlight things like status, count, or category"
-						icon="badge"
+						name="Card"
+						description="A block that groups content in a visually separated container"
+						icon="card"
 					/>
 					<ComponentCard
-						name="Card"
-						description="A structured block that groups content in a visually separated container"
-						icon="card"
+						name="Badge"
+						description="A small label used to highlight things"
+						icon="badge"
 					/>
 					<ComponentCard
 						name="Gauge"

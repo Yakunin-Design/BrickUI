@@ -1,7 +1,6 @@
 .hero {
 	margin-top: -3rem;
 	width: 100%;
-	text-align: center;
 	positoin: relative;
 }
 
@@ -11,11 +10,12 @@
 }
 
 .title {
-	width: 80vw;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: left;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 1rem;
+	background: #212121;
 }
 
 .action_bar {
@@ -55,6 +55,13 @@
 
 	.title {
 		width: 40vw;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: 0;
+		background: none;
 	}
 	
 	.cta_group {

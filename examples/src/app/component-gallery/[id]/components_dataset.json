@@ -1,0 +1,10 @@
+{
+    "container": {
+        "name": "Container",
+        "description": "this element is really important",
+        "code": "import { Container } from \"@brick-uikit/layout\"",
+        "properties": [
+          {"prop-one": ["one", "two"]}
+        ]
+    }
+}

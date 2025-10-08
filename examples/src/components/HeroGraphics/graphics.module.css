@@ -12,3 +12,53 @@
 	cursor: crosshair;
 	filter: drop-shadow(0 0 3px #ff4600);
 }
+
+.desktop {
+	display: none;
+}
+
+
+
+.anim {
+  opacity: 0;
+  filter: drop-shadow(0 0 0 #ff4600);
+  animation: fadePulse 16s ease-in-out infinite;
+}
+
+/* Smooth fade in/out, one visible at a time */
+@keyframes fadePulse {
+  /* Each .anim gets a 2 s slot (16 s / 8 elements) */
+  0%, 6% {
+    opacity: 0;
+    filter: drop-shadow(0 0 0 #ff4600);
+  }
+  12%, 18% {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px #ff4600);
+  }
+  25%, 100% {
+    opacity: 0;
+    filter: drop-shadow(0 0 0 #ff4600);
+  }
+}
+
+/* Staggered start times */
+.anim:nth-of-type(1) { animation-delay: 0s; }
+.anim:nth-of-type(2) { animation-delay: 2s; }
+.anim:nth-of-type(3) { animation-delay: 4s; }
+.anim:nth-of-type(4) { animation-delay: 6s; }
+.anim:nth-of-type(5) { animation-delay: 8s; }
+.anim:nth-of-type(6) { animation-delay: 10s; }
+.anim:nth-of-type(7) { animation-delay: 12s; }
+.anim:nth-of-type(8) { animation-delay: 14s; }
+
+
+
+@media only screen and (min-width: 1300px) {
+	.mobile {
+		display: none;
+	}
+	.desktop {
+		display: block;
+	}
+}

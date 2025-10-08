@@ -1,5 +1,4 @@
-:root {
-	/* Universal */
+:root {	/* Universal */
 	--placeholder: #696969;
     --background-light: white;
 	--border-light: #D9D9D9;
@@ -48,8 +47,8 @@ body {
 	background-repeat: repeat;
 	background-size: 20vw 20vw;
 	font-family: var(--font-ibm-plex-sans), sans-serif;
+	color: var(--text);
 }
-
 
 @media only screen and (min-width: 800px) {
 	body {
@@ -127,3 +126,6 @@ p {
 	color: var(--text);
 }
 
+b {
+    font-size: 14px;
+}

@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
-import { Container, Spacer } from "@brick-uikit/layout";
+import { Container, Spacer, Row } from "@brick-uikit/layout";
+import { Badge } from "@brick-uikit/display";
 import Link from "next/link";
 
 export default function Menu() {
@@ -8,18 +9,33 @@ export default function Menu() {
 			<Container wrapper>
 				<Spacer top={3}/>
 				<h2>Brick uikit</h2>	
-				<br/>
+
+				<Spacer top={1}/>
 				<Link href={"/philosophy"}>Philosophy</Link>
-				<br/>
+
+				<Spacer top={1}/>
 				<Link href={"/installation"}>Installation</Link>
-				<br/>
+
+				<Spacer top={1}/>
 				<Link href={"/component-gallery"}>Component Gallery</Link>
-				<br/>
-				<Link href={"/guidelines"}>Style guidelines</Link>
-				<br/>
-				<Link href={"/theming"}>Theming</Link>
-				<br/>
-				<Link href={"/examples"}>Examples</Link>
+
+				<Spacer top={1}/>
+				<Row gap={1}>
+					<Link href={"/guides"}>Style guidelines</Link>
+					<Badge>demo</Badge>
+				</Row>
+
+				<Spacer top={1}/>
+				<Row gap={1}>
+					<Link href={"/"}>Theming</Link>
+					<Badge>coming soon</Badge>
+				</Row>
+
+				<Spacer top={1}/>
+				<Row gap={1}>
+					<Link href={"/"}>Examples</Link>
+					<Badge>coming soon</Badge>
+				</Row>
 			</Container>
 		</>
 	);
