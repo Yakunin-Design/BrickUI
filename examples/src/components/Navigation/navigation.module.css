@@ -2,8 +2,13 @@
 	padding: 1rem 0;
     background: #0f0f0f;
     margin-bottom: 3rem;
+	border-top: 1px solid #0f0f0f;
 	border-bottom: 1px solid var(--border);
 	color: var(--text-dark);
+}
+
+.small_nav {
+	height: 18px;
 }
 
 .header h2 {

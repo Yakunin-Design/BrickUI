@@ -33,8 +33,7 @@ export default function Navigation() {
 						<Image
 							src={menu_icon}
 							alt="menu icon"
-							height={12}
-							width={12}
+							width={18}
 						/>
 					</Link>
 				</Row>

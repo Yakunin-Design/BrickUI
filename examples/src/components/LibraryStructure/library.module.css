@@ -1,9 +1,12 @@
 .description {
-	max-width: 160px;
+	max-width: 170px;
 }
 
-
 @media only screen and (min-width: 800px) { 
+	.subtitle {
+		font-size: 18px;
+	}
+
 	.description {
 		max-width: 600px;
 	}
