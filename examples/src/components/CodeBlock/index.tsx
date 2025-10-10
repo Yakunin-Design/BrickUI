@@ -19,7 +19,8 @@ type props = {
 	lang: string,
 	code: string,
 	title?: string,
-	terminal?: boolean
+	terminal?: boolean,
+	example?: boolean
 }
 
 export default function CodeBlock(props: props) {
@@ -39,9 +40,12 @@ export default function CodeBlock(props: props) {
 		}, 2000);
 	}
 
+	const caption_class = props.example ? styles.example : styles.caption;
+	const code_class = props.example ? styles.code + " " + styles.example_code  : styles.code;
+
 	return (
 		<figure>
-			<div className={styles.caption} onClick={copy_to_clipboard}>
+			<div className={caption_class} onClick={copy_to_clipboard}>
 				<Row>
 					<Row gap={1}>
 						<Image
@@ -62,7 +66,7 @@ export default function CodeBlock(props: props) {
 					/>
 				</Row>
 			</div>
-			<pre className={styles.code}>
+			<pre className={code_class}>
 				<code dangerouslySetInnerHTML={{
 					__html: highlited_code
 				}}></code>

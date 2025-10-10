@@ -27,6 +27,10 @@
 	grid-template-columns: 1fr 1fr;
 }
 
+.usage {
+	border-color: #050;
+}
+
 @media only screen and (min-width: 800px) {
 	.component_card {
 		min-height: 270px;

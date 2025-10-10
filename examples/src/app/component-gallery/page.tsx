@@ -41,6 +41,7 @@ export default function ComponentGalleryPage() {
 						name="Row"
 						description="Arranges children in a horizontal line, from left to right"
 						icon="row"
+						examples
 					/>
 
 					<ComponentCard
@@ -74,6 +75,7 @@ export default function ComponentGalleryPage() {
 						name="Button"
 						description="An interactive element that triggers an action when clicked"
 						icon="button"
+						examples
 					/>
 					<ComponentCard
 						name="Checkbox"
@@ -100,6 +102,7 @@ export default function ComponentGalleryPage() {
 						name="Badge"
 						description="A small label used to highlight things"
 						icon="badge"
+						examples
 					/>
 					<ComponentCard
 						name="Gauge"

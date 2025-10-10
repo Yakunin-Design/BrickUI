@@ -15,6 +15,15 @@
 	display: none;
 }
 
+.example {
+	display: none;
+}
+
+.example_code {
+	border: 1px solid #4b4b4b;
+	border-top: none;
+}
+
 .caption {
 	color: white;
 	background: #1d1d1d;

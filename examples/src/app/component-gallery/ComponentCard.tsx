@@ -1,7 +1,7 @@
 import Link from "next/link"; 
 import Image from "next/image";
-import { Card } from "@brick-uikit/display";
-import { Spacer } from "@brick-uikit/layout";
+import { Card, Badge } from "@brick-uikit/display";
+import { Spacer, Row } from "@brick-uikit/layout";
 
 import styles from "./components.module.css";
 
@@ -26,7 +26,8 @@ type props = {
 	name: string
 	description: string
 	icon: string
-	experimental?: boolean
+	experimental?: boolean,
+	examples?: boolean
 }
 
 export default function ComponentCard(props: props) {
@@ -50,7 +51,7 @@ export default function ComponentCard(props: props) {
 	if (props.icon === "textarea") icon = textarea_icon;
 
 	return (
-		<Link href={"/component-gallery/" + props.icon}>
+		<Link href={"/component-gallery/" + props.name.toLowerCase()}>
 			<Card className={props.experimental ? styles.experimental : styles.component_card}>
 				<Image
 				  src={icon}
@@ -59,7 +60,14 @@ export default function ComponentCard(props: props) {
 				  className={styles.icon}
 				/>
 				<Spacer top={1}/>
-				<h3>{props.name}</h3>
+				<Row>
+					<h3>{props.name}</h3>
+					{props.examples &&
+						<Badge outline mini className={styles.usage}>
+							usage
+						</Badge>
+					}
+				</Row>
 				<Spacer top={.5}/>
 				<p>{props.description}</p>
 			</Card>
