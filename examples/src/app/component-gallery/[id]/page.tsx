@@ -1,9 +1,11 @@
 import { Container, Spacer } from "@brick-uikit/layout";
-import dataset from "./components_dataset.json";
 import CodeBlock from "@/components/CodeBlock";
 import PropTable from "./PropTable";
 import PrevNext from "@/components/PrevNext";
+import Usage from "./Usage";
 import { ComponentData, ComponentProperty } from "./component_property";
+
+import dataset from "@/data/components_dataset";
 
 interface PageProps {
 	params: {
@@ -41,8 +43,9 @@ export default function ComponentPage({ params }: PageProps) {
 					lang="jsx"
 					code={component.code}
 				/>
+				<Usage id={component.name}/>
 			</Container>
-			<PrevNext/>
+			<PrevNext current={component.name}/>
 		</>
 	);
 } 

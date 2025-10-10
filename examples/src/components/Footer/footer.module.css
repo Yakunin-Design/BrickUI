@@ -4,7 +4,7 @@
     margin-top: 6rem;
 	border-top: 1px solid var(--border);
 	color: var(--text-dark);
-	min-height: 10rem;
+	min-height: 16rem;
 }
 
 .header h2 {

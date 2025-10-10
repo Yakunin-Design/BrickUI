@@ -22,19 +22,19 @@ export default function Menu() {
 				<Spacer top={1}/>
 				<Row gap={1}>
 					<Link href={"/guides"}>Style guidelines</Link>
-					<Badge>demo</Badge>
+					<Badge mini accent>demo</Badge>
 				</Row>
 
 				<Spacer top={1}/>
 				<Row gap={1}>
 					<Link href={"/"}>Theming</Link>
-					<Badge>coming soon</Badge>
+					<Badge mini>coming soon</Badge>
 				</Row>
 
 				<Spacer top={1}/>
 				<Row gap={1}>
 					<Link href={"/"}>Examples</Link>
-					<Badge>coming soon</Badge>
+					<Badge mini>coming soon</Badge>
 				</Row>
 			</Container>
 		</>

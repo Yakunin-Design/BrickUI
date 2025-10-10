@@ -27,19 +27,19 @@ export default function ComponentGalleryPage() {
 
 					<ComponentCard
 						name="Container"
-						description="Sets visual boundaries of a webpage, limiting content width."
+						description="Sets visual boundaries of a webpage, limiting content width"
 						icon="container"
 					/>
 
 					<ComponentCard
 						name="Padding"
-						description="A wrapper that adds inner spacing around its child."
+						description="A wrapper that adds inner spacing around its child"
 						icon="padding"
 					/>
 
 					<ComponentCard
 						name="Row"
-						description="Arranges children in a horizontal line, from left to right."
+						description="Arranges children in a horizontal line, from left to right"
 						icon="row"
 					/>
 
@@ -57,7 +57,7 @@ export default function ComponentGalleryPage() {
 				<div className={styles.grid}>
 					<ComponentCard
 						name="Input"
-						description="A basic field where users can type text or numbers."
+						description="A basic field where users can type text or numbers"
 						icon="input"
 					/>
 					<ComponentCard

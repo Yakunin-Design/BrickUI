@@ -1,0 +1,236 @@
+{ 
+    "spacer": {
+        "name": "Spacer",
+        "lib": "layout",
+        "description": "Invisible block that adds white space",
+        "code": "import { Spacer } from \"@brick-uikit/layout\";",
+        "properties": [
+          {"top?": ["number", "Top margin in rems"]},
+          {"bottom?": ["number", "Bottom margin in rems"]},
+          {"children?": ["React.Node", "Accpets children to render"]},
+          {"left?": ["number", "Left margin in rems"]}
+        ]
+    },
+    "container": {
+        "name": "Container",
+        "lib": "layout",
+        "description": "Sets visual boundaries of a webpage, limiting content width.",
+        "code": "import { Container } from \"@brick-uikit/layout\";",
+        "properties": [
+            {"children": ["React.Node", "Accpets children to render"]},
+            {"wrapper?": ["boolean", "Adds minimal page height of 100vh"]},
+            {"className?": ["string", "Sets class attribute"]},
+            {"lk?": ["boolean", "Custom prop used in hrc"]}
+        ]
+    },
+    "padding": {
+        "name": "Padding",
+        "lib": "layout",
+        "description": "A wrapper that adds inner spacing around its child.",
+        "code": "import { Padding } from \"@brick-uikit/layout\";",
+        "properties": [
+            {"children": ["React.Node", "Accpets children to render"]},
+            {"horizontal?": ["number", "Horizontal padding in rems"]},
+            {"vertical?": ["number", "Vertical padding in rems"]},
+            {"onClick?": ["() => void", "Sets onClick method"]},
+            {"className?": ["string", "Sets class attribute"]},
+            {"title?": ["string", "CSS title attribute"]}
+        ]
+    },
+    "row": {
+        "name": "Row",
+        "lib": "layout",
+        "description": "Arranges children in a horizontal line, from left to right.",
+        "code": "import { Row } from \"@brick-uikit/layout\";",
+        "properties": [
+            {"children": ["React.Node", "Accpets children to render"]},
+            {"gap?": ["number", "Gap size in rems"]},
+            {"justifyContent?": ["\"flex-end\" | \"space-between\" | \"space-around\"", "Allows to set CSS justify-content property"]},
+            {"align?": ["\"start\" | \"end\"", "CSS flexbox align-items property"]},
+            {"className?": ["string", "Sets class attribute"]},
+            {"onClick?": ["() => void", "Sets onClick method"]},
+            {"title?": ["string", "Sets title attribute"]}
+        ]
+    },
+    "divider": {
+        "name": "Divider",
+        "lib": "layout",
+        "description": "A thin line used as a separator. Helps to visually split blocks or interface elements",
+        "code": "import { Divider } from \"@brick-uikit/layout\";",
+        "properties": [
+            {"text?": ["string", "Small type in the middle of the divider line"]}
+        ]
+    },
+    "input": {
+        "name": "Input",
+        "lib": "input",
+        "description": "A basic field where users can type text or numbers.",
+        "code": "import { Input } from \"@brick-uikit/input\";",
+        "properties": [
+            {"name": ["string", "HTML name attribute"]},
+            {"onChange": ["(event: ChangeEvent<HTMLTextAreaElement>) => void", "onChane property"]},
+            {"type?": ["\"tel\" | \"email\"", "Phone number or email type"]},
+            {"placeholder?": ["string", "Placeholder text in the input"]},
+            {"label?": ["string", "Label assosiated with the input"]},
+            {"value?": ["\"string\" | \"number\"", "Actual value of the input"]},
+            {"className?": ["string", "Sets class attribute"]},
+            {"error?": ["string", "Error message"]},
+            {"maxLength?": ["number", "Limits the max input length"]},
+            {"style?": ["CSSProperties", "Sets CSS styles"]},
+            {"list?": ["string", "Sets list attribute"]},
+            {"min?": ["number", "Min characters required"]},
+            {"max?": ["number", "Max characters allowed"]},
+            {"disabled?": ["boolean", "Disabled the input"]},
+            {"pattern?": ["string", "Sets the pattern attribute"]}
+        ]
+    },
+    "passwordinput": {
+        "name": "PasswordInput",
+        "lib": "input",
+        "description": "Input field that hides characters to keep sensitive info",
+        "code": "import { PasswordInput } from \"@brick-uikit/input\";",
+        "properties": [
+            {"name": ["string", "HTML name attribute"]},
+            {"onChange": ["(event: ChangeEvent<HTMLTextAreaElement>) => void", "onChane property"]},
+            {"label?": ["string", "Label assosiated with the input"]},
+            {"className?": ["string", "Sets class attribute"]},
+            {"value?": ["\"string\" | \"number\"", "Actual value of the input"]},
+            {"error?": ["string", "Error message"]},
+            {"maxLength?": ["number", "Limits the max input length"]},
+            {"placeholder?": ["string", "Placeholder text in the input"]},
+            {"style?": ["CSSProperties", "Sets CSS styles"]}
+        ]
+    },
+    "textarea": {
+        "name": "TextArea",
+        "lib": "input",
+        "description": "A multi-line text field for entering longer content",
+        "code": "import { TextArea } from \"@brick-uikit/input\";",
+        "properties": [
+            {"name": ["string", "HTML name attribute"]},
+            {"onChange": ["(event: ChangeEvent<HTMLTextAreaElement>) => void", "onChane property"]},
+            {"label?": ["string", "Label assosiated with the input"]},
+            {"className?": ["string", "Sets class attribute"]},
+            {"value?": ["\"string\" | \"number\"", "Actual value of the input"]},
+            {"placeholder?": ["string", "Placeholder text in the input"]},
+            {"style?": ["CSSProperties", "Sets CSS styles"]}
+        ]
+    },
+    "button": {
+        "name": "Button",
+        "lib": "input",
+        "description": "An interactive element that triggers an action when clicked",
+        "code": "import { Button } from \"@brick-uikit/input\";",
+        "properties": [
+            {"children": ["React.Node", "Accpets children to render"]},
+            {"onClick?": ["() => void", "Sets onClick method"]},
+            {"seconday?": ["boolean", "Secondary button variation"]},
+            {"outline?": ["boolean", "Outline button variation"]},
+            {"ghost?": ["boolean", "Ghost button variation"]},
+            {"destructive?": ["boolean", "Destructive button variation"]},
+            {"disabled?": ["boolean", "Disables the button"]},
+            {"submit?": ["boolean", "Sets submit attribute"]},
+            {"link?": ["boolean", "Sets link attribute"]},
+            {"href?": ["string", "Sets href attribute for a link"]},
+            {"expand?": ["string", "Button takes all the horizontal space"]},
+            {"className?": ["string", "Sets class attribute"]},
+            {"style?": ["CSSProperties", "Sets CSS styles"]}
+        ]
+    },
+    "checkbox": {
+        "name": "Checkbox",
+        "lib": "input",
+        "description": "A small box that users can check or uncheck",
+        "code": "import { Checkbox } from \"@brick-uikit/input\";",
+        "properties": [
+            {"onChange": ["(event: ChangeEvent<HTMLTextAreaElement>) => void", "onChane property"]},
+            {"checked?": ["boolean", "Initial checkbox value"]},
+            {"children?": ["React.Node", "Accpets children to render"]},
+            {"error?": ["string", "Error message"]}
+        ]
+    },
+    "select": {
+        "name": "Select",
+        "lib": "input",
+        "description": "A dropdown menu that lets users choose options from a list",
+        "code": "import { Select } from \"@brick-uikit/input\";",
+        "properties": [
+            {"onChange": ["(event: ChangeEvent<HTMLTextAreaElement>) => void", "onChane property"]},
+            {"name": ["string", "HTML name attribute"]},
+            {"options": ["Array<string>", "Available options"]},
+            {"value": ["string | number", "Actual selected value"]},
+            {"className?": ["string", "Sets class attribute"]},
+            {"label?": ["string", "Label assosiated with this select"]},
+            {"error?": ["string", "Error message"]},
+            {"values?": ["Array<string | number>", "Corresponding to options array of values"]}
+        ]
+    },
+    "card": {
+        "name": "Card",
+        "lib": "display",
+        "description": "A block that groups content in a visually separated container",
+        "code": "import { Card } from \"@brick-uikit/display\";",
+        "properties": [
+            {"no_spacing?": ["boolean", "Removes inner spacing"]},
+            {"outline?": ["boolean", "Outline card variation"]},
+            {"className?": ["string", "Sets class attribute"]},
+            {"style?": ["CSSProperties", "Sets CSS styles"]}
+        ]
+    },
+    "badge": {
+        "name": "Badge",
+        "lib": "display",
+        "description": "A small label used to highlight things",
+        "code": "import { Badge } from \"@brick-uikit/display\";",
+        "properties": [
+            {"children": ["React.Node", "Accpets children to render"]},
+            {"mini?": ["boolean", "Mini badge variation"]},
+            {"outline?": ["boolean", "Outline badge variation"]},
+            {"accent?": ["boolean", "Accent color badge variation"]},
+            {"secondary?": ["boolean", "Secondary badge variation"]},
+            {"className?": ["string", "Sets class attribute"]},
+            {"style?": ["CSSProperties", "Sets CSS styles"]}
+        ]
+    },
+    "gauge": {
+        "name": "Gauge",
+        "lib": "display",
+        "description": "A visual indicator, that shows value within a range",
+        "code": "import { Gauge } from \"@brick-uikit/display\";",
+        "properties": [
+            {"className?": ["string", "Sets class attribute"]},
+            {"procent?": ["boolean", "display procents"]},
+            {"no_color?": ["boolean", "dont colorize"]}
+        ]
+    },
+    "radio": {
+        "name": "Radio",
+        "lib": "experimental",
+        "description": "A circular input that allows users to select only one option from a group",
+        "code": "import { Radio } from \"@brick-uikit/experimental\";",
+        "properties": [
+            {"children": ["React.Node", "Accpets children to render"]},
+            {"name": ["string", "HTML name attribute"]}
+        ]
+    },
+    "hidden": {
+        "name": "Hidden",
+        "lib": "experimental",
+        "description": "This just hides everything inside of hidden component",
+        "code": "import { Hidden } from \"@brick-uikit/experimental\";",
+        "properties": [
+            {"children": ["React.Node", "Accpets children to render"]}
+        ]
+    },
+    "autocomplete": {
+        "name": "AutoComplete",
+        "lib": "experimental",
+        "description": "Autocomplete input that shows a list of suggestions",
+        "code": "import { AutoComplete } from \"@brick-uikit/experimental\";",
+        "properties": [
+            {"className?": ["string", "Sets class attribute"]}
+        ]
+    }
+}
+
+
