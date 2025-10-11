@@ -46,8 +46,16 @@ body {
 	background-image: url("/background.svg");
 	background-repeat: repeat;
 	background-size: 20vw 20vw;
-	font-family: var(--font-ibm-plex-sans), sans-serif;
+	font-family: var(--font-ibm-plex), sans-serif;
 	color: var(--text);
+
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	background: transparent;
 }
 
 @media only screen and (min-width: 800px) {
@@ -129,3 +137,9 @@ p {
 b {
     font-size: 14px;
 }
+
+input {
+	color: var(--text);
+}
+
+

@@ -2,11 +2,17 @@
 import styles from "./page.module.css";
 import { Container, Spacer, Row, Padding } from "@brick-uikit/layout";
 import { Button } from "@brick-uikit/input";
+import { Card } from "@brick-uikit/display";
 import CodeBlock from "@/components/CodeBlock";
 import Link from "next/link";
+import Image from "next/image";
 import PhilosophyPoints from "@/components/PhilosophyPoints";
 import HeroGraphics from "@/components/HeroGraphics";
 import LibraryStructure from "@/components/LibraryStructure";
+import SubFooter from "@/components/SubFooter";
+
+import figma_logo from "@/components/Footer/figma_logo.svg";
+import sketch_logo from "@/components/Footer/sketch_logo.svg";
 
 export default function Home() {
 	return (
@@ -49,6 +55,34 @@ export default function Home() {
 				<LibraryStructure/>
 
 				<Spacer top={3}/>
+				<h2>Downlaod UI kit</h2>
+				<p>For your favorite design tool</p>
+				<Row gap={2}>
+					<Link href={"https://www.figma.com/design/0vRjG7pnQQwDR33vuSV02L/UI-kit?node-id=0-1&t=qRpKzh5aTCNE45wX-1"} target="_blank" className={styles.kit_link}>
+						<Card className={styles.card}>
+							<Image 
+								alt="figma logo"
+								height={16}
+								src={figma_logo}
+							/>
+							<Spacer top={2}/>
+							<h3>Figma</h3>
+						</Card>
+					</Link>
+					<Link href={"/"} className={styles.kit_link}>
+						<Card className={styles.card}>
+							<Image 
+								alt="sketch logo"
+								height={16}
+								src={sketch_logo}
+							/>
+							<Spacer top={2}/>
+							<h3>Sketch</h3>
+						</Card>
+					</Link>
+				</Row>
+
+				<Spacer top={3}/>
 				<h2>Intall now</h2>
 				<Spacer top={1}/>
 				<CodeBlock
@@ -69,6 +103,10 @@ export default function Home() {
 					terminal
 				/>
 			</Container>
+			<SubFooter 
+				left_link="/installation"
+				right_link="/component-gallery"
+			/>
 		</>
 	);
 

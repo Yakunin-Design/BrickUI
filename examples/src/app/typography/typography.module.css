@@ -1,0 +1,44 @@
+.description {
+	font-size: 1.2rem;
+}
+
+.breakpoints {
+	background: #1d1d1d;
+	padding: 0 1rem;
+	border-radius: 4px;
+}
+
+.points p {
+	padding: 1rem;
+}
+
+.points .selected {
+	background: var(--accent);
+	color: var(--contrast);
+}
+
+.points .selected:hover {
+	background: var(--accent);
+	color: var(--contrast);
+}
+
+.points p:hover {
+	background: #101010;
+	cursor: pointer;
+}
+
+.type_card {
+	background: #1d1d1d;
+	padding-left: 1rem;
+	border-radius: 4px;
+}
+
+.params {
+	border-left: 1px solid grey;
+	min-width: 200px;
+}
+
+.params p, .params h4 {
+	padding: .7rem 1rem;
+}
+

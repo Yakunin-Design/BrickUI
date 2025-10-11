@@ -5,7 +5,7 @@ import PrevNext from "@/components/PrevNext";
 import Usage from "./Usage";
 import { ComponentData, ComponentProperty } from "./component_property";
 
-import dataset from "@/data/components_dataset";
+import dataset from "@/data/components_dataset.json";
 
 interface PageProps {
 	params: {
@@ -19,7 +19,7 @@ function dataset_search(id: string) {
 	for(let i = 0; i < titles.length; i++) {
 		const title = titles[i];
 		if(title === id) {
-			const component_data: ComponentData = dataset[title];
+			const component_data = (dataset as unknown as Record<string, ComponentData>)[title];
 			return component_data;
 		}
 	}

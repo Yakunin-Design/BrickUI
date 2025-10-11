@@ -1,5 +1,5 @@
 import styles from "./table.module.css";
-import { ComponentData, ParsedComponentProperty } from "./component_data";
+import { ParsedComponentProperty, ComponentProperty } from "./component_property";
 import { Spacer } from "@brick-uikit/layout";
 
 function TableRow(props: ParsedComponentProperty){

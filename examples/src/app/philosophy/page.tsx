@@ -28,18 +28,6 @@ export default function YappingPage() {
 			<Spacer top={1}/>
 			<PhilosophyPoints/>
 
-			<Spacer top={1}/>
-			<h3>Library strucrute</h3>
-			<br/>
-			<p>
-				@brick-uikit/layout - 
-				<br/>
-				@brick-uikit/input - 
-				<br/>
-				@brick-uikit/display - 
-				<br/>
-			</p>
-
 			<br/>
 			<Badge><p>Enough yapping, install Brick uikit</p></Badge>
 		</Container>

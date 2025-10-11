@@ -17,8 +17,6 @@
 	display: none;
 }
 
-
-
 .anim {
   opacity: 0;
   filter: drop-shadow(0 0 0 #ff4600);
@@ -52,8 +50,6 @@
 .anim:nth-of-type(7) { animation-delay: 12s; }
 .anim:nth-of-type(8) { animation-delay: 14s; }
 
-
-
 @media only screen and (min-width: 1300px) {
 	.mobile {
 		display: none;
@@ -62,3 +58,4 @@
 		display: block;
 	}
 }
+

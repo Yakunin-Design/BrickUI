@@ -1,14 +1,15 @@
-import Link from "next/Link";
+import Link from "next/link";
 import { Container, Row, Spacer } from "@brick-uikit/layout";
 import RowUsage from "./RowUsage";
 import ButtonUsage from "./ButtonUsage";
 import BadgeUsage from "./BadgeUsage";
+import InputUsage from "./InputUsage";
+import CheckboxUsage from "./CheckboxUsage";
 import styles from "./prev_next.module.css";
 
 type props = {
-	id: stirng
+	id: string
 }
-
 
 export default function Usage(props: props) {
 	const id = props.id.toLowerCase();
@@ -26,6 +27,12 @@ export default function Usage(props: props) {
 			}
 			{id === "badge" &&
 				<BadgeUsage/>
+			}
+			{id === "input" &&
+				<InputUsage/>
+			}
+			{id === "checkbox" &&
+				<CheckboxUsage/>
 			}
 		</>
 	);

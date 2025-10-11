@@ -13,4 +13,4 @@ type ParsedComponentProperty = {
 	description: string;
 };
 
-export {ComponentProperty, CompoentData, ParsedComponentProperty}
+export {type ComponentProperty, type ComponentData, type ParsedComponentProperty}

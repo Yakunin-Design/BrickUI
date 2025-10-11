@@ -28,6 +28,10 @@ export default function Navigation() {
 						<Link href="/component-gallery">
 							<p>Component Gallery</p>
 						</Link>
+						|
+						<Link href="/typography">
+							<p>Typography</p>
+						</Link>
 					</div>
 					<Link href="/menu" className={styles.small_nav}>
 						<Image

@@ -48,6 +48,15 @@
 	box-shadow: 0 0 7px #ff4600;
 }
 
+.card {
+	background: #1d1d1d !important;
+	cursor: pointer;
+}
+
+.kit_link {
+	width: 100%;
+}
+
 @media only screen and (min-width: 800px) {
 	.description {
 		font-size: 1.2rem;

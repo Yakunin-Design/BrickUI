@@ -28,13 +28,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${jetbrainsMono} ${spaceGrotesk.variable} ${ibmPlex.variable} dark`}>
+			<body className={`${jetbrainsMono.variable} ${spaceGrotesk.variable} ${ibmPlex.variable} dark`}>
 				<Navigation />
 				{children}
 				<Footer />

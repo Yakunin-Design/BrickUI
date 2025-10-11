@@ -21,7 +21,7 @@ export default function Menu() {
 
 				<Spacer top={1}/>
 				<Row gap={1}>
-					<Link href={"/guides"}>Style guidelines</Link>
+					<Link href={"/typography"}>Typography</Link>
 					<Badge mini accent>demo</Badge>
 				</Row>
 

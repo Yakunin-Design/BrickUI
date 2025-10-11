@@ -39,7 +39,7 @@ export default function ComponentGalleryPage() {
 
 					<ComponentCard
 						name="Row"
-						description="Arranges children in a horizontal line, from left to right"
+						description="Arranges children in a line, from left to right"
 						icon="row"
 						examples
 					/>
@@ -51,7 +51,6 @@ export default function ComponentGalleryPage() {
 					/>
 				</div>
 
-
 				<Spacer top={4} bottom={1}>
 					<h2>Input</h2>
 				</Spacer>
@@ -60,6 +59,7 @@ export default function ComponentGalleryPage() {
 						name="Input"
 						description="A basic field where users can type text or numbers"
 						icon="input"
+						examples
 					/>
 					<ComponentCard
 						name="PasswordInput"
@@ -81,6 +81,7 @@ export default function ComponentGalleryPage() {
 						name="Checkbox"
 						description="A small box that users can check or uncheck"
 						icon="checkbox"
+						examples
 					/>
 					<ComponentCard
 						name="Select"
