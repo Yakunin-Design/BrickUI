@@ -109,5 +109,4 @@ export default function Home() {
 			/>
 		</>
 	);
-
 }

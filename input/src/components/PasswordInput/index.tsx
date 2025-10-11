@@ -31,7 +31,7 @@ export default function PasswordInput(props: props) {
                     {props.label}
                 </label>
             )}
-            <Spacer top={1} />
+            <Spacer top={.5} />
             <div className={styles.icon_wrapper}>
                 <input
                     className={input_style}

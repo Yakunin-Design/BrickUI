@@ -1,0 +1,21 @@
+.base {
+    background-color: var(--contrast);
+    border-radius: var(--border-radius);
+    width: 100%;
+}
+
+.default_spacing {
+    margin-top: 2em;
+    padding: 1.5em;
+}
+
+@media (min-width: 700px) {
+	.default_spacing {
+		padding: 2em;
+	}
+}
+
+.outline {
+	border: var(--border-width) solid var(--border);
+	background-color: transparent;
+}

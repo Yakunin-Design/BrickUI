@@ -1,0 +1,27 @@
+.base {
+    background-color: var(--contrast);
+    border-radius: var(--border-radius);
+	padding: .5em;
+	width: fit-content;
+}
+
+.accent {
+    background-color: var(--accent);
+	color: var(--contrast);
+}
+
+.secondary {
+    background-color: var(--border);
+	color: var(--title);
+}
+
+.outline {
+	border: var(--border-width) solid var(--border);
+	background-color: transparent;
+}
+
+.mini {
+	font-size: 10px;
+	font-weight: bold;
+	padding: .5rem;
+}

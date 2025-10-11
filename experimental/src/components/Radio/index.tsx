@@ -8,9 +8,9 @@ type radio_group_props = {
 
 export function RadioGroup(props: radio_group_props) {
 	return(
-		<p>
+		<div>
 			{props.children}	
-		</p>
+		</div>
 	);
 }
 

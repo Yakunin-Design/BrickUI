@@ -1,24 +1,24 @@
 .label {
     font-weight: bold;
     font-size: 1rem;
-    /* line-height: 120%; */
-    /* letter-spacing: 0.05rem; */
 }
 
-.input {
+.select {
     width: 100%;
     background-color: transparent;
-    padding: 1rem;
+    padding: 0.9em 1.2em;
 
     border-radius: var(--border-radius);
     border: var(--border-width) solid var(--border);
 
     font-size: 1rem;
 	color: var(--text);
+	-webkit-appearance: none;
 }
 
-.input:focus {
+.select:focus {
     outline: none;
+    border: var(--border-width) solid var(--accent);
 }
 
 .error {
