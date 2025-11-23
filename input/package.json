@@ -50,12 +50,12 @@
     "vite-tsconfig-paths": "^4.3.2"
   },
   "peerDependencies": {
-    "@brick-uikit/layout": "^0.1.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@brick-uikit/layout": ">=0.1.0",
+    "react": ">=18.3.1",
+    "react-dom": ">=18.3.1"
   },
   "packageManager": "yarn@4.2.2",
   "dependencies": {
-    "@brick-uikit/lib": "^0.0.1"
+    "@brick-uikit/lib": ">=0.0.1"
   }
 }
