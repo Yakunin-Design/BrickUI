@@ -6,7 +6,7 @@
 	color: white;
 	whitespace: pre;
 	overflow-x: scroll;
-	scroll-width: none;
+	scrollbar-width: none;
 	tab-size: 4;
 	-moz-tab-size: 4;
 }
