@@ -5,17 +5,24 @@ import CodeBlock from "@/components/CodeBlock";
 import UsageCard from "@/components/UsageCard";
 import React from "react";
 
-const example1 = `<Checkbox onChange={handleChange} checked>
-  Accept terms and conditions
-</Checkbox>
-<Spacer top={1}/>
-<Checkbox
-  onChange={handleChange}
-  error="You must accept terms to continue"
+const example1 = `<Checkbox 
+	onChange={handleChange} 
+	checked
 >
-  Accept terms and conditions
+	Accept terms and conditions
+</Checkbox>
+
+<Spacer top={1}/>
+
+<Checkbox
+	onChange={handleChange}
+	error="You must accept terms to continue"
+>
+	Accept terms and conditions
 </Checkbox>
 `;
+
+
 
 export default function CheckboxUsage() {
 	function handleChange() {}

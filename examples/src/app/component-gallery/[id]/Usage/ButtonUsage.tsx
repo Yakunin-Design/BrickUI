@@ -42,13 +42,17 @@ const exampleForm = `<form
 </form>
 `;
 
-
-const example5 = `<Button className={styles.glow}>Glow button</Button>
-<Button style={{
-	background: "linear-gradient(90deg, #931a04, #e3492d)",
-	color: "#DDD",
-	border: "1px solid #931a04"
-}}>Inline Gradient</Button>`
+const example5 = `<Button className={styles.glow}>
+	Glow button
+</Button>
+<Button 
+	style={{
+		background: "linear-gradient(90deg, #931a04, #e3492d)",
+		color: "#DDD",
+		border: "1px solid #931a04"
+	}}>
+	Inline Gradient
+</Button>`
 
 export default function ButtonUsage() {
 	return (
@@ -141,7 +145,9 @@ export default function ButtonUsage() {
 				description="You can use className to apply your own CSS modules or utility classes, and styles to directly override individual CSS properties when needed. This is useful for creating special-case buttons, state-dependent styling, or small one-off adjustments"
 				example={
 					<Row>
-						<Button className={styles.glow}>ClassName</Button>
+						<Button className={styles.glow}>
+							Glow button
+						</Button>
 						<Button
 							style={{
 								background: "linear-gradient(90deg, #931a04, #e3492d)",
@@ -149,7 +155,7 @@ export default function ButtonUsage() {
 								border: "1px solid #931a04"
 							}}
 						>
-							Style
+							Inline Gradient
 						</Button>
 					</Row>
 				}

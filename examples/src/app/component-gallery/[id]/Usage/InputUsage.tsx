@@ -6,29 +6,65 @@ import UsageCard from "@/components/UsageCard";
 import React, { ChangeEvent, useState, CSSProperties } from "react";
 import styles from "./usage.module.css";
 
-const basicExample = `<Input type="email" label="Email" placeholder="Enter your email" />
+const basicExample = `<Input 
+	type="email" 
+	label="Email" 
+	placeholder="Enter your email" 
+/>
 <Spacer top={1}/>
-<Input name="phone" type="tel" placeholder="Enter your phone" />
+<Input 
+	name="phone" 
+	type="tel" 
+	placeholder="Enter your phone" 
+/>
 <Spacer top={1}/>
 <Input error="Invalid input" />`;
 
-const sizeExample = `<Input min={5}  placeholder="Min 5 chars" />
+const sizeExample = `<Input min={5} placeholder="Min 5 chars" />
 <Spacer top={1}/>
 <Input max={10} placeholder="Max 10 chars" />`;
 
-const customizationExample = `<Input style={{
-	border: "1px solid #931a04", background: "#fff8f5", color: "#931a04" }}
-	placeholder="Custom style" />
+const customizationExample = `<Input 
+	style={{border: "1px solid #931a04", background: "#fff8f5", color: "#931a04" }}
+	placeholder="Custom style" 
+/>
 <Spacer top={1}/>
-<Input className={styles.customInput} placeholder="Custom class" />`;
+<Input 
+	className={styles.customInput}
+	placeholder="Custom class" 
+/>`;
 
-const logicExample = `<Input name="email" onChange={handleChange} label="Email" type="email" placeholder="Enter email" />
+const logicExample = `<Input 
+	name="email" 
+	onChange={handleChange}
+	label="Email"
+	type="email"
+	placeholder="Enter email"
+/>
 <Spacer top={1}/>
-<Input name="phone" onChange={handleChange} label="Phone" type="tel" placeholder="Enter phone" />
+<Input 
+	name="phone"
+	onChange={handleChange}
+	label="Phone"
+	type="tel"
+	placeholder="Enter phone"
+/>
 <Spacer top={1}/>
-<Input name="disabled" onChange={handleChange} disabled placeholder="Disabled input" />
+<Input 
+	name="disabled"
+	onChange={handleChange}
+	disabled
+	placeholder="Disabled input"
+/>
 <Spacer top={1}/>
-<Input name="validated" onChange={handleChange} pattern="[A-Za-z]{3,10}" maxLength={10} error="Must be 3-10 letters" placeholder="Validation example" />`;
+<Input 
+	name="validated"
+	onChange={handleChange}
+	pattern="[A-Za-z]{3,10}"
+	maxLength={10}
+	error="Must be 3-10 letters"
+	placeholder="Validation example"
+/>`;
 
 export default function InputUsage() {
 	const [values, setValues] = useState({
