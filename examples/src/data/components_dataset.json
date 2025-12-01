@@ -123,15 +123,15 @@
         "code": "import { Button } from \"@brick-uikit/input\";",
         "properties": [
             {"children": ["React.Node", "Accpets children to render"]},
-            {"onClick?": ["() => void", "Sets onClick method"]},
             {"seconday?": ["boolean", "Secondary button variation"]},
             {"outline?": ["boolean", "Outline button variation"]},
             {"ghost?": ["boolean", "Ghost button variation"]},
+			{"link?": ["boolean", "Sets link attribute"]},
+			{"href?": ["string", "Sets href attribute for a link"]},
+			{"disabled?": ["boolean", "Disables the button"]},
             {"destructive?": ["boolean", "Destructive button variation"]},
-            {"disabled?": ["boolean", "Disables the button"]},
             {"submit?": ["boolean", "Sets submit attribute"]},
-            {"link?": ["boolean", "Sets link attribute"]},
-            {"href?": ["string", "Sets href attribute for a link"]},
+			{"onClick?": ["() => void", "Sets onClick method"]},
             {"expand?": ["string", "Button takes all the horizontal space"]},
             {"className?": ["string", "Sets class attribute"]},
             {"style?": ["CSSProperties", "Sets CSS styles"]}
@@ -143,7 +143,7 @@
         "description": "A small box that users can check or uncheck",
         "code": "import { Checkbox } from \"@brick-uikit/input\";",
         "properties": [
-            {"onChange": ["(event: ChangeEvent<HTMLTextAreaElement>) => void", "onChane property"]},
+            {"onChange": ["() => void", "onChane property"]},
             {"checked?": ["boolean", "Initial checkbox value"]},
             {"children?": ["React.Node", "Accpets children to render"]},
             {"error?": ["string", "Error message"]}
