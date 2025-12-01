@@ -97,11 +97,26 @@ export default function InputUsage() {
 				description="Basic usage covers the default Input, with optional label, placeholder, and error message."
 				example={
 					<>
-						<Input type="email" label="Email" placeholder="Enter your email" />
+						<Input 
+							name="email"
+							onChange={() => {}}
+							type="email"
+							label="Email"
+							placeholder="Enter your email"
+						/>
 						<Spacer top={1}/>
-						<Input name="phone" type="tel" placeholder="Enter your phone" />
+						<Input 
+							onChange={() => {}}
+							name="phone"
+							type="tel"
+							placeholder="Enter your phone"
+						/>
 						<Spacer top={1}/>
-						<Input error="Invalid input" />
+						<Input 
+							onChange={() => {}}
+							name="errors"
+							error="Invalid input" 
+						/>
 					</>
 				}
 			>
@@ -121,9 +136,19 @@ export default function InputUsage() {
 				description="Adjust input width using `style` or CSS, and enforce character limits using `min` and `max` props."
 				example={
 					<>
-						<Input min={5}  placeholder="Min 5 chars" />
+						<Input 
+							name="min"
+							onChange={() => {}}
+							min={5}
+							placeholder="Min 5 chars"
+						/>
 						<Spacer top={1}/>
-						<Input max={10} placeholder="Max 10 chars" />
+						<Input 
+							name="max"
+							onChange={() => {}}
+							max={10}
+							placeholder="Max 10 chars"
+						/>
 					</>
 				}
 			>
@@ -145,9 +170,17 @@ export default function InputUsage() {
 					<>
 						<Input style={{
 							border: "1px solid #931a04", background: "#fff8f5", color: "#931a04" }}
-							placeholder="Custom style" />
+							placeholder="Custom style" 
+							name="styled"
+							onChange={() => {}}
+							/>
 						<Spacer top={1}/>
-						<Input className={styles.customInput} placeholder="Custom class" />
+						<Input 
+							name="classed"
+							onChange={() => {}}
+							className={styles.customInput} 
+							placeholder="Custom class"
+						/>
 					</>
 				}
 			>
