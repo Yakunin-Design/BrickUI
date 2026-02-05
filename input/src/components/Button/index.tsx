@@ -53,6 +53,7 @@ export default function Button(props: button_props) {
 						onClick={props.onClick}
 						style={props.style}
 						type={props.submit ? "submit" : "button"}
+                        disabled={props.disabled}
 					>
 						{props.children}
 					</button>
@@ -63,6 +64,7 @@ export default function Button(props: button_props) {
 					onClick={props.onClick}
 					type={props.submit ? "submit" : "button"}
 					style={props.style}
+                    disabled={props.disabled}
 				>
 					{props.children}
 				</button>
