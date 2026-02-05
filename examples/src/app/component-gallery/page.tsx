@@ -23,6 +23,7 @@ export default function ComponentGalleryPage() {
 						name="Spacer"
 						description="Invisible block that adds white space"
 						icon="spacer"
+						examples
 					/>
 
 					<ComponentCard
