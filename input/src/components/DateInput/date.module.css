@@ -1,15 +1,23 @@
+.label {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+    letter-spacing: 0.05rem;
+    color: var(--input-label-color, var(--title, #0f0f0f));
+}
+
 .day {
-	width: calc(2ch + 2.5em + 5px) !important;
+    width: calc(2ch + 2.5em + 5px) !important;
 }
 
 .year {
-	width: calc(4ch + 2.5em + 1px) !important;
+    width: calc(4ch + 2.5em + 1px) !important;
 }
 
 .error {
-    border-color: var(--error);
+    border-color: var(--input-error, var(--error, #e10000));
 }
 
 .error_label {
-	color: var(--error); 
+    color: var(--input-error, var(--error, #e10000));
 }

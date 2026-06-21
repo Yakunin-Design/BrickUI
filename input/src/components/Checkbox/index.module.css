@@ -5,18 +5,19 @@
 
 .checkbox {
     width: 1.5em;
-	min-width: 1.5em;
+    min-width: 1.5em;
     height: 1.5rem;
-	min-height: 1.5em;
-    border: 0.15rem solid #818181;
+    min-height: 1.5em;
+    border: var(--input-border-width, var(--border-width, 2px)) solid var(--input-border, var(--border, #b0b0b0));
     border-radius: 0.2rem;
+    background-color: var(--input-bg, #f9f6f6);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .checkbox:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .input {
@@ -24,18 +25,17 @@
 }
 
 .error {
-    border: 0.15rem solid var(--error);
-    border-color: var(--error);
+    border-color: var(--input-error, var(--error, #e10000));
 }
 
 .error_label {
-    color: var(--error);
+    color: var(--input-error, var(--error, #e10000));
 }
 
 .input:checked + label .checkbox {
-    border-color: var(--accent);
+    border-color: var(--input-border-focus, var(--accent, #2c744e));
 }
 
 .checkbox svg path {
-	fill: var(--accent);
+    fill: var(--input-border-focus, var(--accent, #2c744e));
 }

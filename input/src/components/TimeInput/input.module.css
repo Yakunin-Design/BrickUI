@@ -3,29 +3,33 @@
     font-size: 1.05rem;
     line-height: 120%;
     letter-spacing: 0.05rem;
+    color: var(--input-label-color, var(--title, #0f0f0f));
 }
 
 .input {
     width: 100%;
-
-    padding: 0.9em 1.2em;
-
-	border-radius: var(--border-radius);
-    border: var(--border-width) solid var(--border);
-	text-align: center;
-
+    background-color: var(--input-bg, #f9f6f6);
+    padding: var(--input-padding, 14px 19px);
+    border-radius: var(--input-radius, var(--border-radius, 3px));
+    border: var(--input-border-width, var(--border-width, 2px)) solid var(--input-border, var(--border, #b0b0b0));
+    color: var(--input-color, var(--text, #404040));
+    text-align: center;
     font-size: 1rem;
+}
+
+.input::placeholder {
+    color: var(--input-placeholder, var(--placeholder, #8a8a8a));
 }
 
 .input:focus {
     outline: none;
-    border: var(--border-width) solid var(--accent);
+    border-color: var(--input-border-focus, var(--accent, #2c744e));
 }
 
 .error {
-    border-color: var(--error);
+    border-color: var(--input-error, var(--error, #e10000));
 }
 
 .error_label {
-	color: var(--error); 
+    color: var(--input-error, var(--error, #e10000));
 }

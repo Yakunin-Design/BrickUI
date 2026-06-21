@@ -1,30 +1,29 @@
 .label {
     font-weight: bold;
     font-size: 1rem;
+    color: var(--input-label-color, var(--title, #0f0f0f));
 }
 
 .select {
     width: 100%;
-    background-color: transparent;
-    padding: 0.9em 1.2em;
-
-    border-radius: var(--border-radius);
-    border: var(--border-width) solid var(--border);
-
+    background-color: var(--input-bg, #f9f6f6);
+    padding: var(--input-padding, 14px 19px);
+    border-radius: var(--input-radius, var(--border-radius, 3px));
+    border: var(--input-border-width, var(--border-width, 2px)) solid var(--input-border, var(--border, #b0b0b0));
+    color: var(--input-color, var(--text, #404040));
     font-size: 1rem;
-	color: var(--text);
-	-webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 .select:focus {
     outline: none;
-    border: var(--border-width) solid var(--accent);
+    border-color: var(--input-border-focus, var(--accent, #2c744e));
 }
 
 .error {
-    border-color: var(--error);
+    border-color: var(--input-error, var(--error, #e10000));
 }
 
 .error_label {
-	color: var(--error); 
+    color: var(--input-error, var(--error, #e10000));
 }
